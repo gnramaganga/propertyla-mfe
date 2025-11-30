@@ -44,13 +44,14 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
 
   return (
     <div
-      className={`tp-rent-item p-relative ${item.spacing && "mb-30"} ${
+      style={{ border: "1px solid #DBE1EF" }}
+      className={`row tp-rent-item p-relative ${item.spacing && "mb-30"} ${
         item.wowAnimation && "wow fadeInUp"
       }`}
       data-wow-duration={item.wowDelay ? "1s" : undefined}
       data-wow-delay={item.wowDelay ? item.wowDelay : undefined}
     >
-      <div className="tp-rent-thumb p-relative">
+      <div className="col-xl-6 tp-rent-thumb p-relative">
         <Link href={`/${item.linkUrl}/${item.id}`}>
           <Image
             src={item.image}
@@ -100,7 +101,7 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
           </div>
         )}
       </div>
-      <div className="tp-rent-content">
+      <div className="col-xl-6 tp-rent-content">
         <h4 className="tp-rent-title">
           <Link className="textline" href={`/${item.linkUrl}/${item.id}`}>
             {item.title}

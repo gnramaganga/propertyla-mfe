@@ -5,7 +5,7 @@ import { propertyData } from "@/data/propertyData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Favourite - Bhumi Real Estate React NextJs Template",
+  title: "Favourite - Property-La Real Estate React NextJs Template",
 };
 
 export default function DashboardFavourite() {
@@ -15,11 +15,9 @@ export default function DashboardFavourite() {
         <div className="tp-dashboard-property-wrapper">
           <div className="row">
             {/* My Property */}
-            {
-              propertyData.slice(55, 59).map((property) => (
-                <DashboardPropertyItem property={property} key={property.id} />
-              ))
-            }
+            {propertyData.slice(55, 59).map((property) => (
+              <DashboardPropertyItem property={property} key={property.id} />
+            ))}
             {/* pagination area */}
             <div className="col-lg-12">
               <PropertyPagination />
@@ -28,5 +26,5 @@ export default function DashboardFavourite() {
         </div>
       </DashboardLayout>
     </>
-  )
+  );
 }

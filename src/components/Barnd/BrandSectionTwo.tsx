@@ -11,33 +11,38 @@ import brandImg8 from "../../../public/assets/img/brand/home-2/brand-thumb-8.png
 
 // Array of brand images for display in the brand section
 const brandData = [
-    brandImg1, brandImg2,brandImg3,brandImg4,brandImg5,brandImg6,brandImg7,brandImg8
+  brandImg1,
+  brandImg2,
+  brandImg3,
+  brandImg4,
+  brandImg5,
+  brandImg6,
+  brandImg7,
+  brandImg8,
 ];
 
 export default function BrandSectionTwo() {
-    return (
-        <div className="tp-brand-2-border pb-120">
-            <div className="container">
-                <div className="row gx-0">
-
-                    {brandData.map((image, index) => (
-                        // Render brand logos in a responsive grid with links and tooltips
-                          <div className="col-lg-3 col-sm-6" key={index}>
-                          <div className="tp-brand-2-item p-relative">
-                              <Link href="#">
-                                  <Image src={image} alt="Brand Logo" />
-                              </Link>
-                              <div className="tp-brand-2-toltip">
-                                  <Link href="#">
-                                      <span>Visit Bhumi</span>
-                                  </Link>
-                              </div>
-                          </div>
-                      </div>
-                    ))}
-
+  return (
+    <div className="tp-brand-2-border pb-120">
+      <div className="container">
+        <div className="row gx-0">
+          {brandData.map((image, index) => (
+            // Render brand logos in a responsive grid with links and tooltips
+            <div className="col-lg-3 col-sm-6" key={index}>
+              <div className="tp-brand-2-item p-relative">
+                <Link href="#">
+                  <Image src={image} alt="Brand Logo" />
+                </Link>
+                <div className="tp-brand-2-toltip">
+                  <Link href="#">
+                    <span>Visit Property-La</span>
+                  </Link>
                 </div>
+              </div>
             </div>
+          ))}
         </div>
-    );
+      </div>
+    </div>
+  );
 }

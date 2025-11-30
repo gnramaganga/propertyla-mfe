@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 
-interface ErrorType{
-    message: string | undefined;
+interface ErrorType {
+  message: string | undefined;
 }
 
-const ErrorMessage = ({message}:ErrorType) => {
-    return <div style={{ color: "red", textAlign: "start", fontSize: "14px" }}>{message}</div>;  
+const ErrorMessage = ({ message }: ErrorType) => {
+  return (
+    <div style={{ color: "red", textAlign: "start", fontSize: "14px" }}>
+      {message}
+    </div>
+  );
 };
 
 export default ErrorMessage;
-

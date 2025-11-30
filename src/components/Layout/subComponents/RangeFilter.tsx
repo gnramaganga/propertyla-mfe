@@ -1,4 +1,3 @@
-
 "use client";
 import { Range } from "react-range";
 import { useState } from "react";
@@ -29,18 +28,18 @@ export default function RangeFilter() {
               max={100}
               values={priceValues}
               onChange={(values) => setPriceValues(values)}
-              renderTrack={({ props, children}) => {
+              renderTrack={({ props, children }) => {
                 const [min, max] = [0, 100];
                 const left = ((priceValues[0] - min) / (max - min)) * 100;
                 const right = ((priceValues[1] - min) / (max - min)) * 100;
                 return (
-                  <div 
+                  <div
                     {...props}
                     style={{
                       ...props.style,
                       height: "7px",
                       width: "100%",
-                      background: `linear-gradient(to right, #ffffff ${left}%, #5758D6 ${left}%, #5758D6 ${right}%, #ffffff ${right}%)`,
+                      background: `linear-gradient(to right, #ffffff ${left}%, #f1913d ${left}%, #f1913d ${right}%, #ffffff ${right}%)`,
                       boxShadow: "0px 0px 4px 0px rgba(192, 204, 231, 0.6)",
                       marginTop: "12px",
                     }}
@@ -57,7 +56,7 @@ export default function RangeFilter() {
                     ...props.style,
                     height: "12px",
                     width: "8px",
-                    backgroundColor: "#5758D6",
+                    backgroundColor: "#f1913d",
                   }}
                 />
               )}
@@ -97,7 +96,7 @@ export default function RangeFilter() {
                       ...props.style,
                       height: "7px",
                       width: "100%",
-                      background: `linear-gradient(to right, #ffffff ${left}%, #5758D6 ${left}%, #5758D6 ${right}%, #ffffff ${right}%)`,
+                      background: `linear-gradient(to right, #ffffff ${left}%, #f1913d ${left}%, #f1913d ${right}%, #ffffff ${right}%)`,
                       boxShadow: "0px 0px 4px 0px rgba(192, 204, 231, 0.6)",
                       marginTop: "12px",
                     }}
@@ -114,7 +113,7 @@ export default function RangeFilter() {
                     ...props.style,
                     height: "12px",
                     width: "8px",
-                    backgroundColor: "#5758D6",
+                    backgroundColor: "#f1913d",
                   }}
                 />
               )}
@@ -125,5 +124,3 @@ export default function RangeFilter() {
     </div>
   );
 }
-
-

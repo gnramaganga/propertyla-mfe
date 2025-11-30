@@ -90,7 +90,7 @@ export default function ServiceAreaTwo() {
               </div>
               <div className="tp-service-5-btn-box d-flex">
                 <div className="tp-service-5-btn mr-20">
-                  <Link className="tp-btn" href="/property-style-1">
+                  <Link className="tp-btn" href="/search">
                     <span className="btn-wrap">
                       <b className="text-1">Build Your Own Property</b>
                       <b className="text-2">Build Your Own Property</b>

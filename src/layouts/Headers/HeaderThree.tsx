@@ -22,7 +22,7 @@ export default function HeaderThree() {
         <div className="col-xxl-3 col-xl-2 col-lg-4 col-md-3 col-6">
           <div className="tp-header-logo">
             <Link href="/">
-              <Image src={logoBlack} alt="image" />
+              <Image className="logo-header" src={logoBlack} alt="image" />
             </Link>
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function HeaderThree() {
         <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-9 col-6">
           <div className="tp-header-4-main-right d-flex align-items-center justify-content-end">
             <div className="tp-header-4-btn d-none d-md-block">
-              <Link className="tp-btn" href="/property-style-1">
+              <Link className="tp-btn" href="/search">
                 <span className="btn-wrap">
                   <b className="text-1">Find Property</b>
                   <b className="text-2">Find Property</b>

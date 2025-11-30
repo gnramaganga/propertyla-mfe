@@ -32,7 +32,7 @@ export default function PropertyFeaturesSlider({
             <>
               <div className="col-lg-6">
                 <div className="tp-property-btn p-relative z-index-3 text-lg-end mb-30">
-                  <Link className="tp-btn" href="/property-style-1">
+                  <Link className="tp-btn" href="/search">
                     <span className="btn-wrap">
                       <b className="text-1">Find Property</b>
                       <b className="text-2">Find Property</b>

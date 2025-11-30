@@ -1,34 +1,41 @@
 "use client";
-import PropertyInformation from "./PropertyInformation";
+
+import { FormProvider, useForm, SubmitHandler } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { propertySchema, PropertyFormData } from "@/schemas/validationSchema";
+import BasicDetails from "./BasicDetails";
+import LocationDetails from "./LocationDetails";
+import PropertyDetails from "./PropertyDetails";
+import AmenitiesDetails from "./AmenitiesDetails";
 import UploadMedia from "./UploadMedia";
-import PriceDetails from "./PriceDetails";
-import AdditionalInfoArea from "./AdditionalInfoArea";
-import AmenitiesArea from "./AmenitiesArea";
-import VirtualTourArea from "./VirtualTourArea";
-import AgentInfomation from "./AgentInfomation";
 
-export default function AddPropertyMain() {
+export default function AddPropertyPage() {
+  const methods = useForm<PropertyFormData>({
+    resolver: yupResolver(propertySchema),
+    mode: "onSubmit",
+  });
 
-  const handleSorting = () => { };
+  const { handleSubmit } = methods;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const onSubmit: SubmitHandler<PropertyFormData> = (data) => {
+    console.log("✅ Submitted Data:", JSON.stringify(data));
+    alert("Form submitted successfully!");
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <PropertyInformation handleSorting={handleSorting} />
-      <UploadMedia />
-      <PriceDetails handleSorting={handleSorting} />
-      <AdditionalInfoArea handleSorting={handleSorting} />
-      <AmenitiesArea />
-      <VirtualTourArea />
-      <AgentInfomation />
-
-      <div className="tp-dashboard-new-btn">
-        <button type="submit" className="add">Add Property</button>
-        <button type="button" className="save">Save & Preview</button>
-      </div>
-    </form>
+    <FormProvider {...methods}>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <BasicDetails />
+        <LocationDetails />
+        <PropertyDetails />
+        <AmenitiesDetails />
+        <UploadMedia />
+        <div className="tp-dashboard-new-btn">
+          <button type="submit" className="add">
+            Add Property
+          </button>
+        </div>
+      </form>
+    </FormProvider>
   );
 }

@@ -23,7 +23,7 @@ export default function DashboardHeader() {
         <div className="col-xl-2 col-lg-4 col-md-3 col-6">
           <div className="tp-header-logo">
             <Link href="/">
-              <Image src={logoBlack} alt="image" />
+              <Image className="logo-header" src={logoBlack} alt="image" />
             </Link>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function DashboardHeader() {
             <div className="modal-content">
               <div className="tp-sign-in-register-box p-relative text-center">
                 <div className="tp-sign-in-register-heading mb-30">
-                  <h4 className="tp-sign-in-register-title">Hello again</h4>
+                  <h4 className="tp-sign-in-register-title">Welcome</h4>
                   <p>Enter your credentials to access your account.</p>
                 </div>
                 <div className="tp-sign-in-input-form">

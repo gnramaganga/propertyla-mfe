@@ -90,7 +90,7 @@ export default function AboutHomeFour() {
                 </span>
               </Link>
 
-              <Link className="tp-btn btn-2 mb-20" href="/property-style-1">
+              <Link className="tp-btn btn-2 mb-20" href="/search">
                 <span className="btn-wrap">
                   <b className="text-1">Find Property</b>
                   <b className="text-2">Find Property</b>

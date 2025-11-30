@@ -3,11 +3,10 @@ import CheckoutArea from "@/components/shop/CheckoutArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Checkout - Bhumi Real Estate React NextJs Template",
+  title: "Checkout - Property-La Real Estate React NextJs Template",
 };
 
 export default function Checkout() {
-
   return (
     <main>
       {/* -- Breadcrumb start -- */}

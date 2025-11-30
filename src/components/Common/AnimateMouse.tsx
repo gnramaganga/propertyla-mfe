@@ -1,5 +1,4 @@
-
-import custsorSvg from "../../../public/assets/img/property/property-details-1/cursor.svg";
+import custsorSvg from "../../../public/assets/img/property/property-details/cursor.svg";
 import React, { useEffect, useRef } from "react";
 import useGlobalContext from "../../hooks/useContext";
 import Image from "next/image";
@@ -46,11 +45,12 @@ const AnimateMouse: React.FC = () => {
         className={`mouseCursor cursor-inner ${isEnter ? "cursor-big" : ""}`}
         style={{ visibility: "visible" }}
       >
-        <span><Image src={custsorSvg} alt="cursor svg" /></span>
+        <span>
+          <Image src={custsorSvg} alt="cursor svg" />
+        </span>
       </div>
     </>
   );
 };
 
 export default AnimateMouse;
-

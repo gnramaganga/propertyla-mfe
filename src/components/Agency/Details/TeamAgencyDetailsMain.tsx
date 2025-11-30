@@ -71,7 +71,7 @@ export default function TeamAgencyDetailsMain({ id }: IdProps) {
               {/* Component displaying a related team agency item */}
               <RelatedTeamAgencyItem />
               <div className="tp-taem-details-btn mb-40">
-                <Link href="/property-style-1" className="tp-btn">
+                <Link href="/search" className="tp-btn">
                   <span className="btn-wrap">
                     <b className="text-1">View My all Properties</b>
                     <b className="text-2">View My all Properties</b>

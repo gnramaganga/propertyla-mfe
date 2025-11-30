@@ -4,23 +4,23 @@ import CtaArea from "@/components/CTA/CtaArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Agent - Bhumi Real Estate React NextJs Template",
-  };
+  title: "Agent - Property-La Real Estate React NextJs Template",
+};
 
 export default function Agent() {
-    return (
-        <>
-            {/* breadcrumb area */}
-            <BreadcrumbArea title="Agent" />
-            {/* breadcrumb area end */}
+  return (
+    <>
+      {/* breadcrumb area */}
+      <BreadcrumbArea title="Agent" />
+      {/* breadcrumb area end */}
 
-            {/* team area start */}
-            <TeamAgentAreaTwo />
-            {/* team area end */}
+      {/* team area start */}
+      <TeamAgentAreaTwo />
+      {/* team area end */}
 
-            {/* cta area */}
-            <CtaArea wrapClass="tp-cta-4-ptb" />
-            {/* cta area end */}
-        </>
-    )
+      {/* cta area */}
+      <CtaArea wrapClass="tp-cta-4-ptb" />
+      {/* cta area end */}
+    </>
+  );
 }

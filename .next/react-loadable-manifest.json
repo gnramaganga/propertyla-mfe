@@ -1,0 +1,14 @@
+{
+  "layouts/Wrapper.tsx -> bootstrap/dist/js/bootstrap.bundle.min": {
+    "id": "layouts/Wrapper.tsx -> bootstrap/dist/js/bootstrap.bundle.min",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_bootstrap_dist_js_bootstrap_bundle_min_js.js"
+    ]
+  },
+  "layouts/Wrapper.tsx -> wow.js": {
+    "id": "layouts/Wrapper.tsx -> wow.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_wow_js_dist_wow_js.js"
+    ]
+  }
+}

@@ -77,3 +77,7 @@ export const propertyStates = [
   { value: "Kuala Lumpur", label: "Kuala Lumpur" },
   { value: "Johor", label: "Johor" },
 ];
+export const listingTypes = [
+  { value: "rent", label: "Rent" },
+  { value: "sale", label: "Sale" },
+];
