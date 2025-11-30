@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import PropertySingleCard from "../Common/PropertySingleCard";
 import { propertyData } from "@/data/propertyData";
 import React from "react";
@@ -9,7 +9,7 @@ import { Pagination } from "swiper/modules";
 
 export default function PropertyHome() {
   return (
-    <section className="tp-rent-area p-relative pt-135 pb-110">
+    <section className="tp-rent-area p-relative pt-135 pb-60">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -24,10 +24,14 @@ export default function PropertyHome() {
         <div className="row">
           <div className="tp-rent-slider">
             <div className="tp-rent-slider-active pb-rent-slider swiper">
-              <div className="pb-110 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
+              <div
+                className="pb-110 wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".7s"
+              >
                 <Swiper
                   modules={[Pagination]}
-                  slidesPerView={4}
+                  slidesPerView={2}
                   spaceBetween={30}
                   loop={true}
                   freeMode={true}

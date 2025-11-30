@@ -1,5 +1,13 @@
-"use client"
-import { AddPropertySvg, MyPropertiesSvg, MyFavouritesSvg, ReviewsSvg, IdentityDockSvg, LogoutSvg, DashboardSvg } from "@/components/SVG";
+"use client";
+import {
+  AddPropertySvg,
+  MyPropertiesSvg,
+  MyFavouritesSvg,
+  ReviewsSvg,
+  IdentityDockSvg,
+  LogoutSvg,
+  DashboardSvg,
+} from "@/components/SVG";
 import Link from "next/link";
 import { JSX, useState, useEffect } from "react";
 
@@ -87,7 +95,7 @@ const Sidebar = () => {
           <Link
             href={item.href}
             className={activePath === item.href ? "active" : ""}
-            onClick={() => setActivePath(item.href)} 
+            onClick={() => setActivePath(item.href)}
           >
             <span>{item.icon}</span> {item.label}
           </Link>
@@ -108,4 +116,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-

@@ -12,34 +12,34 @@ export const testimonials_home: ITestimonialIDT[] = [
   {
     id: 1,
     description:
-      "Is it possible to Love your credit card processor? With Bhumi, yes!",
+      "PropertyLa made it so easy to find my dream condo in Kuala Lumpur! I found and moved into my new place in less than two weeks!",
     image: userImg1,
-    name: "Lana Rey",
-    role: "Founder & Leader",
+    name: "Amira Dep",
+    role: "Kuala Lumpur",
   },
   {
     id: 2,
     description:
-      "Is it possible to Love your credit card processor? With Bhumi, yes!",
+      "As a first-time homebuyer, I was nervous, but PropertyLa’s detailed listings and location insights helped me make an informed choice.",
     image: userImg2,
-    name: "Haria De",
-    role: "Founder & Leader",
+    name: "Wang Lee",
+    role: "Penang",
   },
   {
     id: 3,
     description:
-      "Is it possible to Love your credit card processor? With Bhumi, yes!",
+      "I loved how I could compare nearby condos and check amenities like swimming pool and gym easily. The site is very user-friendly!",
     image: userImg3,
-    name: "Bulbi Ti",
-    role: "Founder & Leader",
+    name: "adia S",
+    role: "Petaling Jaya",
   },
   {
     id: 4,
     description:
-      "Is it possible to Love your credit card processor? With Bhumi, yes!",
+      "I listed my apartment for rent and received genuine inquiries within days. The platform’s quality leads saved me so much time.",
     image: userImg2,
-    name: "Haria De",
-    role: "Founder & Leader",
+    name: "Siti Nur A",
+    role: "Johor Bahru",
   },
 ];
 

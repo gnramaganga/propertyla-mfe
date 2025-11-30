@@ -1,19 +1,43 @@
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import FilterBtnSvg from "@/components/SVG/BannerSvg/FilterBtnSvg";
 import { propertyStates } from "@/data/dropdownData";
 import NiceSelect from "@/components/UI/NiceSelect";
 import { ITabContentProps } from "@/types/banner-d-t";
+import ErrorMessage from "../../../components/Form/ErrorMassage";
+import PlaceSearch from "./PlaceSearch";
 
 // TabContent Component
 export default function HeroBannerTabContent({
   id,
   isActive,
-  onSortChange,
+  //onSortChange,
   toggleFilter,
 }: ITabContentProps) {
+  const [error, setError] = useState(false);
   const router = useRouter();
+  const [place, setPlace] = useState<string>("");
+  const [city, setCity] = useState<string>("");
+  const handleSelect = (selected: string) => {
+    setPlace(selected);
+  };
+
+  const onStateChange = (e) => {
+    setCity(e.value);
+  };
+
   const getProperties = () => {
-    router.push("/property-style-1");
+    if (!place.trim()) {
+      setError(true);
+      return;
+    }
+    console.log("place", place);
+    const query = new URLSearchParams({
+      address: place,
+      city: city,
+      type: id,
+    });
+    router.push(`/search?${query.toString()}`);
   };
   return (
     <div
@@ -28,17 +52,17 @@ export default function HeroBannerTabContent({
               <NiceSelect
                 options={propertyStates}
                 defaultCurrent={0}
-                onChange={onSortChange}
-                name="Sorting"
+                onChange={onStateChange}
+                name="States"
               />
             </div>
           </div>
-          <div className="col-xs-12 col-xl-6 col-lg-6">
+          <div className="col-xs-12 col-xl-6 col-lg-6 marTop20">
             <div className="tp-hero-tab-input p-relative">
-              <input
-                type="text"
-                placeholder="Search by name"
-                style={{ width: "100%" }}
+              <PlaceSearch
+                onSelect={handleSelect}
+                placeholder="Search location or property name"
+                defaultValue=""
               />
             </div>
           </div>
@@ -54,11 +78,21 @@ export default function HeroBannerTabContent({
               </button>
             </div>
           </div>
-          <div className="col-xs-6 col-xl-2 col-lg-2">
+          <div
+            className="col-xs-6 col-xl-2 col-lg-2"
+            style={{ paddingRight: "0px" }}
+          >
             <div className="tp-hero-tab-search">
-              <button onClick={() => getProperties()}>Search</button>
+              <button style={{ width: "100%" }} onClick={() => getProperties()}>
+                Search
+              </button>
             </div>
           </div>
+          {error ? (
+            <ErrorMessage message="Please enter location or property name" />
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
     </div>

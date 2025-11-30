@@ -31,11 +31,11 @@ export default function HeaderOne() {
             <Link href="/">
               {sticky ? (
                 <>
-                  <Image src={logoBlack} alt="image" />
+                  <Image className="logo-header" src={logoBlack} alt="image" />
                 </>
               ) : (
                 <>
-                  <Image src={logoWhite} alt="image" />
+                  <Image className="logo-header" src={logoWhite} alt="image" />
                 </>
               )}
             </Link>
@@ -54,8 +54,8 @@ export default function HeaderOne() {
           <div className="tp-header-dashboard-btn d-none d-md-block">
             <Link className="tp-btn" href="/dashboard/add-new-property">
               <span className="btn-wrap">
-                <b className="text-1">Add Listing</b>
-                <b className="text-2">Add Listing</b>
+                <b className="text-1">Post Property</b>
+                <b className="text-2">Post Property</b>
               </span>
             </Link>
           </div>

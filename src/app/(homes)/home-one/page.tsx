@@ -8,7 +8,7 @@ import HeroBannerOne from "@/components/HeroBanner/HeroBannerOne";
 import HomePropertiesByCity from "@/components/Neighborhood/HomePropertiesByCity";
 import HomeNewsletter from "@/components/Newsletter/HomeNewsletter";
 import FeatureShowcaseCategory from "@/components/Property/FeatureShowcaseCategory";
-import PropertyHome from "@/components/Property/PropertyHome";
+import PropertyHome from "@/components/Property/PropertyHomeFour";
 import TeamAgentsArea from "@/components/Agent/TeamAgentsArea";
 import HomeTestimonialArea from "@/components/Testimonial/HomeTestimonialArea";
 import TextSlide from "@/components/Features/TextSlide";
@@ -30,31 +30,32 @@ export default function HomeOnePage() {
       <HomeApartmentTypes />
       {/*apartment area type end */}
       {/* newsletter area */}
-      <HomeNewsletter />
+      {/* <HomeNewsletter /> */}
       {/* newsletter area end */}
-      {/* rent area */}
-      <PropertyHome />
-      {/* rent area end */}
       {/* apartment area*/}
       <HomeApartmentArea />
       {/* apartment area end*/}
+      {/* rent area */}
+      <PropertyHome />
+      {/* rent area end */}
+
       {/* explore area */}
       <HomePropertiesByCity />
       {/* explore area end */}
       {/* counter area */}
-      <HomeApproachCounter />
+      {/* <HomeApproachCounter /> */}
       {/* counter area end */}
       {/* testimonial area */}
       <HomeTestimonialArea />
       {/* testimonial area end */}
       {/* text slide */}
-      <TextSlide />
+      {/* <TextSlide /> */}
       {/* text slide end*/}
       {/* team area */}
       <TeamAgentsArea />
       {/* team area end*/}
       {/* barnd area */}
-      <BrandAreaOne />
+      {/* <BrandAreaOne /> */}
       {/* barnd area end */}
       {/* blog area */}
       <HomeBlogArea />

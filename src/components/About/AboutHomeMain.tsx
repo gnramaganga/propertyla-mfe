@@ -45,7 +45,7 @@ export default function AboutHomeMain() {
                       <b className="text-2">About Company</b>
                     </span>
                   </Link>
-                  <Link className="tp-btn btn-2" href="/property-style-1">
+                  <Link className="tp-btn btn-2" href="/search">
                     <span className="btn-wrap">
                       <b className="text-1">Find Property</b>
                       <b className="text-2">Find Property</b>

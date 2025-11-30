@@ -33,7 +33,7 @@ const HeaderTwo = () => {
         <div className="col-xl-2 col-lg-4 col-md-3 col-6">
           <div className="tp-header-logo">
             <Link href="/">
-              <Image src={logoBlack} alt="image" />
+              <Image className="logo-header" src={logoBlack} alt="image" />
             </Link>
           </div>
         </div>
@@ -70,7 +70,7 @@ const HeaderTwo = () => {
             </div>
 
             <div className="tp-header-2-btn d-none d-md-block">
-              <Link className="tp-btn" href="/property-style-1">
+              <Link className="tp-btn" href="/search">
                 <span className="btn-wrap">
                   <b className="text-1">Find Property</b>
                   <b className="text-2">Find Property</b>

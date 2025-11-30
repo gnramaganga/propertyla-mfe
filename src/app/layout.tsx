@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick.css";
 import type { Metadata } from "next";
 import { Toaster } from "sonner";
 import "swiper/css/bundle";
+import GoogleMapsProvider from "../components/HeroBanner/subComponents/GoogleMapsProvider";
 import "./globals.scss";
-
 
 // Load Plus Jakarta Sans from Google Fonts
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -29,8 +29,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bhumi - Real Estate React NextJs Template",
-  description: "Bhumi is a modern, highly customizable Next.js theme designed for real estate businesses, agencies, and property listings, offering a seamless and user-friendly experience.",
+  title: "Property-La - Real Estate React NextJs Template",
+  description:
+    "Property-La is a modern, highly customizable Next.js theme designed for real estate businesses, agencies, and property listings, offering a seamless and user-friendly experience.",
 };
 
 export default function RootLayout({
@@ -40,11 +41,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className={`${plusJakartaSans.variable} ${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        suppressHydrationWarning
+        className={`${plusJakartaSans.variable} ${geistSans.variable} ${geistMono.variable}`}
+      >
         <ReduxProvider>
           <VideoProvider>
             <AppProvider>
-              {children}
+              {" "}
+              <GoogleMapsProvider>{children}</GoogleMapsProvider>
             </AppProvider>
             <Toaster position="top-center" richColors />
             <GlobalVideoModal />

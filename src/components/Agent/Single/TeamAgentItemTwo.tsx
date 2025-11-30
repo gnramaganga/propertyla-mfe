@@ -64,7 +64,7 @@ export default function TeamAgentItemTwo({ item }: { item: ITeamDT }) {
           )}
         </div>
         <div className="tp-team-inner-btn">
-          <Link href="/property-style-1">{item.listedProperty}</Link>
+          <Link href="/search">{item.listedProperty}</Link>
         </div>
       </div>
     </div>

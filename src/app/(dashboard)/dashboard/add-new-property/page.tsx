@@ -1,9 +1,9 @@
-import DashboardLayout from "@/layouts/DashboardLayout"
-import AddPropertyMain from "./components/AddPropertyMain"
+import DashboardLayout from "@/layouts/DashboardLayout";
+import AddPropertyMain from "./components/AddPropertyMain";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Add New Property - Bhumi Real Estate React NextJs Template",
+  title: "Add New Property - Property-La Real Estate React NextJs Template",
 };
 
 export default function AddProperty() {
@@ -15,5 +15,5 @@ export default function AddProperty() {
         {/* tp dashboard area end */}
       </DashboardLayout>
     </>
-  )
+  );
 }

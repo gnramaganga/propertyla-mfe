@@ -9,9 +9,9 @@ export interface AppContextType {
   toggleOffcanvas: () => void;
   toggleOpen: () => void;
   isOpen: boolean;
-  isEnter:boolean;
-  handleMouseEnter:() => void;
-  handleMouseLeave:() => void;
+  isEnter: boolean;
+  handleMouseEnter: () => void;
+  handleMouseLeave: () => void;
 }
 //define interface for PageParams props
 export interface PageParamsProps {
@@ -31,7 +31,10 @@ export interface AwardItemProps {
   date: string;
   description: string;
   image: StaticImageData;
-  handleMouseMove: (event: React.MouseEvent<HTMLDivElement>, selector: string) => void;
+  handleMouseMove: (
+    event: React.MouseEvent<HTMLDivElement>,
+    selector: string
+  ) => void;
 }
 //define interface for counter
 export interface ICounterDT {
@@ -45,7 +48,7 @@ export interface ICounterDT {
 export interface IBannerDT {
   title: string;
   subtitle: string;
-  bgImage: StaticImageData
+  bgImage: StaticImageData;
 }
 //define interface for FAQ
 export interface IFAQItemDT {
@@ -62,7 +65,7 @@ export interface featuresProps {
 
 //define interface for Countries
 export interface ICountryDT {
-  id: number
+  id: number;
   name: string;
   properties: number;
   image: StaticImageData;
@@ -93,11 +96,11 @@ export interface ISortingHandlerProps {
 // Fetch the data based on the provided 'id' prop
 export interface IdProps {
   id: number;
-};
+}
 
 //define interface for Property List Props
 export interface IFeatureListProps {
-  item: IFeaturedPropertyDT
+  item: IFeaturedPropertyDT;
 }
 //define interface for contact location
 export interface ContactLocation {
@@ -108,11 +111,17 @@ export interface ContactLocation {
 }
 //define interface for Sign Up form data
 export interface ISignUpFormData {
-  username: string;
+  displayname: string;
   email: string;
+  phone: string;
+  renNumber?: string;
   password: string;
   confirmPassword: string;
   remember?: boolean;
+}
+
+export interface BasicFromData {
+  title: string;
 }
 
 // Interface for contact form data
@@ -149,7 +158,7 @@ export interface IPropertyReviewFormData {
   number: string;
   message: string;
 }
-//define interface for Portfolio Item Props 
+//define interface for Portfolio Item Props
 export interface IPortfolio {
   image: StaticImageData;
   title: string;
@@ -158,20 +167,20 @@ export interface IPortfolio {
   link: string;
   delay: string;
 }
-//define interface for pricing Props 
+//define interface for pricing Props
 export interface IPricingProps {
   name: string;
   price: string;
   delay: string;
-  active?: boolean | undefined
+  active?: boolean | undefined;
 }
-//define interface for Pricing Item Props 
+//define interface for Pricing Item Props
 export interface PricingItemProps {
   title: string;
   price: string;
   discount: string;
   isActive?: boolean;
-};
+}
 
 // Progress Data Interface
 export interface ProgressData {
@@ -187,11 +196,11 @@ export interface featureProps {
 }
 //define interface for review data
 export interface IReviewDT {
-  id: number,
+  id: number;
   name: string;
   date: string;
   text: string;
-  image: StaticImageData
+  image: StaticImageData;
 }
 //define interface for Recently Viewed data
 export interface IRecentlyViewedItem {

@@ -3,7 +3,7 @@ import CartArea from "@/components/shop/CartArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cart - Bhumi Real Estate React NextJs Template",
+  title: "Cart - Property-La Real Estate React NextJs Template",
 };
 
 export default function Cart() {
@@ -17,5 +17,5 @@ export default function Cart() {
       <CartArea />
       {/* -- Cart area end -- */}
     </main>
-  )
+  );
 }

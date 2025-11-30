@@ -63,13 +63,13 @@ export default function CartOffcanvas({
                     {
                       <div className="cartmini__widget-item">
                         <div className="cartmini__thumb">
-                          <Link href={`/property-details-1/${item.id}`}>
+                          <Link href={`/property-details/${item.id}`}>
                             <Image src={item.image} alt="propery image" />
                           </Link>
                         </div>
                         <div className="cartmini__content">
                           <h5 className="cartmini__title">
-                            <Link href={`/property-details-1/${item.id}`}>
+                            <Link href={`/property-details/${item.id}`}>
                               {item.title}
                             </Link>
                           </h5>
@@ -100,7 +100,7 @@ export default function CartOffcanvas({
                 >
                   <Image src={empty_cart_img} alt="empty-cart-img" />
                   <p>Your Cart is empty</p>
-                  <Link href="/property-style-1" className="tp-cartmini-btn">
+                  <Link href="/search" className="tp-cartmini-btn">
                     Go to Shop
                   </Link>
                 </div>
