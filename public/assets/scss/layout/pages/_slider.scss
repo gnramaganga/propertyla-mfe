@@ -1,4 +1,4 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
 
 /*----------------------------------------*/
 /*  9.1 Slider Css
@@ -39,7 +39,7 @@
       left: 50%;
       z-index: 2;
       font-size: 40px;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 75px;
       letter-spacing: -0.8px;
       transform: translate(-50%, -50%);
@@ -85,19 +85,19 @@
   }
 
   &-title {
-    background: linear-gradient(180deg, #E7EEFD 9.18%, #FCFDFF 90.82%);
+    background: linear-gradient(180deg, #e7eefd 9.18%, #fcfdff 90.82%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 120px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
     margin: 0;
     letter-spacing: -2.4px;
 
     &-2 {
       font-size: 120px;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 1.3;
       letter-spacing: -2.4px;
       color: var(--tp-theme-primary);
@@ -120,13 +120,10 @@
   }
 }
 
-
 .slider-transtion {
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-
-
 
 .#{$theme-prefix}-slider {
   &-5 {
@@ -152,7 +149,7 @@
     &-heading {
       & span {
         display: inline-block;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         margin-bottom: 30px;
         color: var(--tp-common-white);
@@ -161,7 +158,7 @@
 
     &-title {
       font-size: 36px;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 15px;
       letter-spacing: -0.72px;
       color: var(--tp-common-white);
@@ -254,4 +251,3 @@
     border: 2px solid var(--tp-common-white);
   }
 }
-

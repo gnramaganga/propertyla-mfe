@@ -1,32 +1,32 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
 
 /*----------------------------------------*/
 /*  9.0 Service Css
 /*----------------------------------------*/
 
-.#{$theme-prefix}-service{
-  &-border{
-    border-bottom: 1px solid #D9D9D9;
-    &-top{
-      border-top: 1px solid #D9D9D9;
+.#{$theme-prefix}-service {
+  &-border {
+    border-bottom: 1px solid #d9d9d9;
+    &-top {
+      border-top: 1px solid #d9d9d9;
     }
   }
-  &-item{
+  &-item {
     position: relative;
     padding: 60px 60px;
-    border-left: 1px solid #D9D9D9;
+    border-left: 1px solid #d9d9d9;
     @media #{$xl,$md,$xs} {
       padding: 50px 51px;
     }
     @media #{$lg,$md,$xs} {
       border: none;
     }
-    &-box{
+    &-box {
       @media #{$lg,$md,$xs} {
         flex-wrap: wrap;
       }
     }
-    & span{
+    & span {
       position: absolute;
       top: 20px;
       left: 20px;
@@ -34,56 +34,55 @@
       font-weight: 600;
       padding: 0px 4px;
       display: inline-block;
-      background: #F0F4FD;
+      background: #f0f4fd;
       color: var(--tp-theme-primary);
     }
-    & img{
+    & img {
       margin-bottom: 5px;
     }
-    &-title{
-      font-size: 20px;
-      font-weight: 700;
+    &-title {
+      font-size: 14px;
+      font-weight: 600;
       margin: 0;
       color: var(--tp-heading-primary);
     }
   }
 }
 
-
-.#{$theme-prefix}-service-5{
-  &-ptb{
+.#{$theme-prefix}-service-5 {
+  &-ptb {
     @media #{$xs} {
       padding-top: 80px;
       padding-bottom: 80px;
     }
   }
-  &-shape{
+  &-shape {
     position: absolute;
     top: 30px;
     left: 30px;
   }
-  &-thumb{
+  &-thumb {
     @media #{$lg,$md,$xs} {
       margin-bottom: 30px;
     }
-    & img{
+    & img {
       @media #{$lg,$xs} {
         width: 100%;
       }
     }
   }
-  &-item{
+  &-item {
     width: 234px;
-    &:nth-child(odd){
+    &:nth-child(odd) {
       margin-right: 60px;
     }
-    &-box{
+    &-box {
       @media #{$md,$xs} {
         margin-bottom: 0;
       }
     }
-    &-icon{
-      & span{
+    &-icon {
+      & span {
         height: 80px;
         width: 80px;
         text-align: center;
@@ -95,19 +94,19 @@
         box-shadow: 0px 0px 40px 0px rgba(32, 36, 81, 0.07);
       }
     }
-    & span{
-      font-size: 18px;
-      font-weight: 700;
+    & span {
+      font-size: 14px;
+      font-weight: 500;
       color: var(--tp-heading-primary);
     }
   }
-  &-btn{
-    &-box{
+  &-btn {
+    &-box {
       @media #{$xs} {
         flex-wrap: wrap;
       }
     }
-    & .tp-btn{
+    & .tp-btn {
       @media #{$lg,$md,$xs} {
         padding: 18px 18px;
       }

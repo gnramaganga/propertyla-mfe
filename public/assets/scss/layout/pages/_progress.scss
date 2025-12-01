@@ -1,18 +1,18 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
 
 /*----------------------------------------*/
 /*  8.7 Progress Css
 /*----------------------------------------*/
 
-.#{$theme-prefix}-progress{
+.#{$theme-prefix}-progress {
   position: relative;
-  background: #F0F4FD;
-  &-bar{
-    &-box{
+  background: #f0f4fd;
+  &-bar {
+    &-box {
       overflow: hidden;
     }
   }
-  &-title{
+  &-title {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 6px;
@@ -24,7 +24,7 @@
     position: relative;
     transition: width 0.6s ease;
     background-color: var(--tp-theme-primary);
-    &::after{
+    &::after {
       position: absolute;
       content: "";
       right: -5px;
@@ -35,16 +35,16 @@
       background-color: var(--tp-theme-primary);
     }
   }
-  &-counter{
+  &-counter {
     position: absolute;
     top: -30px;
     right: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--tp-text-body);
   }
 
-  &-item{
+  &-item {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -57,8 +57,8 @@
       background-size: cover;
       margin-bottom: 30px;
     }
-    &-content{
-      & span{
+    &-content {
+      & span {
         font-size: 14px;
         font-weight: 500;
         margin-bottom: 5px;
@@ -66,14 +66,14 @@
         color: var(--tp-common-black);
       }
     }
-    &-title{
+    &-title {
       font-size: 24px;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 20px;
       color: var(--tp-common-black);
     }
-    &-btn{
-      & a{
+    &-btn {
+      & a {
         font-size: 12px;
         font-weight: 600;
         padding: 0px 10px;
@@ -82,7 +82,7 @@
         background-color: var(--tp-theme-primary);
       }
     }
-    &-shape{
+    &-shape {
       position: absolute;
       top: 40px;
       right: 40px;
@@ -92,21 +92,21 @@
       }
     }
   }
-  &-count-box{
+  &-count-box {
     padding: 55px 35px;
     background: var(--tp-common-white);
     box-shadow: 0px 0px 40px 0px rgba(20, 21, 58, 0.06);
     @media #{$md,$xs} {
       margin-bottom: 30px;
     }
-    & .tp-counter-title{
+    & .tp-counter-title {
       font-size: 56px;
       letter-spacing: -2.24px;
       @media #{$lg,$md,$xs} {
         font-size: 45px;
       }
     }
-    & span{
+    & span {
       font-weight: 600;
     }
   }

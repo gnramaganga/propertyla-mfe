@@ -109,7 +109,7 @@ export default function PropertyItemHomeFour({
           </div>
           <div className="tp-rent-4-country-item">
             <span>For sale</span>
-            <span>{formatPrice(item.price, true)}</span>
+            <p>{formatPrice(item.price, true)}</p>
           </div>
           <div className="tp-rent-4-country-item">
             <span>Flat space</span>

@@ -268,7 +268,7 @@
     &-btn {
       position: relative;
       display: inline-block;
-      font-size: 16px;
+      font-size: 14px;
       height: 44px;
       width: 44px;
       line-height: 40px;
@@ -291,8 +291,8 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
       & h4 {
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 500;
         margin-bottom: 0;
         text-transform: capitalize;
         color: var(--tp-common-black);
@@ -476,7 +476,7 @@
 
     &-btn {
       & .#{$theme-prefix}-btn {
-        font-size: 18px;
+        font-size: 14px;
         padding: 10px 30px;
         text-align: center;
         border-radius: 50px;
@@ -525,7 +525,7 @@
     }
 
     & p {
-      font-size: 16px;
+      font-size: 14px;
       color: var(--tp-common-black);
       margin-bottom: 15px;
     }
@@ -686,7 +686,7 @@
 
   &-add-cart-btn-large {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     width: 100%;
     padding: 8px 30px;
     display: inline-block;
@@ -722,7 +722,7 @@
 
   &-title {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
     margin-bottom: 8px;
     font-family: var(--tp-ff-heading-3);
 
@@ -743,7 +743,7 @@
 
   &-price {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--tp-common-black);
     font-family: var(--tp-ff-heading-3);
 
@@ -874,7 +874,7 @@
 
     &-heading {
       & .tp-section-title {
-        font-size: 45px;
+        font-size: 32px;
         line-height: 1;
         margin-bottom: 40px;
       }
@@ -896,7 +896,7 @@
 
     &-category {
       & span {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1;
         display: inline-block;
         margin-bottom: 10px;
@@ -930,7 +930,7 @@
 
     &-action {
       &-title {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         margin-bottom: 13px;
       }
@@ -956,7 +956,7 @@
           left: 14px;
           display: inline-block;
           text-align: center;
-          font-size: 16px;
+          font-size: 14px;
           color: var(--tp-common-black);
           position: absolute;
           top: 50%;
@@ -985,7 +985,7 @@
           line-height: 46px;
           border: 0;
           border-radius: 0;
-          font-size: 16px;
+          font-size: 14px;
           color: var(--tp-common-black);
           background-color: var(--tp-common-white);
           padding: 0 30px;
@@ -999,7 +999,7 @@
       width: 295px;
 
       &-btn {
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
         padding: 10px 30px;
         border: 1px solid #e0e2e3;
@@ -1076,7 +1076,7 @@
     &-desc {
       &-wrapper {
         & p {
-          font-size: 16px;
+          font-size: 14px;
           line-height: 1.6;
         }
       }
@@ -1102,7 +1102,7 @@
           }
 
           & .nav-link {
-            font-size: 20px;
+            font-size: 14px;
             color: #a0a2a4;
             padding-left: 0;
             padding-right: 0;
@@ -1182,7 +1182,7 @@
                 &:first-child {
                   padding-left: 24px;
                   border-right: 0;
-                  font-size: 16px;
+                  font-size: 14px;
                   color: var(--tp-common-black);
                   background-color: #f9f9f9;
                   width: 306px;
@@ -1227,7 +1227,7 @@
         }
 
         &-title {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 500;
           margin-bottom: 2px;
         }
@@ -1265,7 +1265,7 @@
         }
 
         & > p {
-          font-size: 16px;
+          font-size: 14px;
           margin-bottom: 8px;
         }
 
@@ -1392,7 +1392,7 @@
     & a {
       margin-left: 20px;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       color: var(--tp-common-black);
 
       &:hover {
@@ -1405,7 +1405,7 @@
     width: 126px;
 
     & span {
-      font-size: 16px;
+      font-size: 14px;
       color: var(--tp-common-black);
     }
   }
@@ -1450,7 +1450,7 @@
 
       & button {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
         color: var(--tp-common-white);
         background-color: var(--tp-common-black);
         padding: 10px 30px;
@@ -1466,7 +1466,7 @@
   &-update {
     &-btn {
       font-weight: 500;
-      font-size: 16px;
+      font-size: 14px;
       color: var(--tp-common-black);
       background-color: var(--tp-common-white);
       padding: 9px 29px;
@@ -1499,7 +1499,7 @@
       border-bottom: 1px solid #e0e2e3;
 
       & span {
-        font-size: 20px;
+        font-size: 14px;
         color: var(--tp-common-black);
         font-weight: 500;
       }
@@ -1587,13 +1587,13 @@
 
       & span {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 14px;
         color: var(--tp-common-black);
       }
     }
 
     &-btn {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
       color: var(--tp-common-white);
       background-color: var(--tp-common-black);
@@ -1647,7 +1647,7 @@
 
   &-btn {
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--tp-common-white);
     background-color: var(--tp-theme-primary);
@@ -2153,7 +2153,7 @@
 
     &-content {
       & p {
-        font-size: 16px;
+        font-size: 14px;
         color: var(--tp-common-white);
         line-height: 1.38;
       }
@@ -2181,15 +2181,15 @@
       }
 
       & h4 {
-        font-size: 18px;
+        font-size: 14px;
         color: var(--tp-common-white);
         margin-bottom: 0;
         font-weight: 400;
       }
 
       & p {
-        font-weight: 700;
-        font-size: 18px;
+        font-weight: 500;
+        font-size: 14px;
         color: var(--tp-common-white);
         margin-bottom: 0;
       }
@@ -2241,7 +2241,7 @@
               padding-bottom: 12px;
 
               & h4 {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 500;
                 margin-bottom: 0;
               }
@@ -2332,7 +2332,7 @@
               padding: 14px 0;
 
               & span {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 500;
               }
             }
@@ -2370,7 +2370,7 @@
   }
 
   &-product-title {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
 
     & a {
@@ -2432,7 +2432,7 @@
   &-remove {
     & button {
       background: transparent;
-      font-size: 16px;
+      font-size: 14px;
       color: var(--tp-common-black);
 
       &:hover {
@@ -2464,7 +2464,7 @@
 
     &-item {
       & a {
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
         font-weight: 600;
         padding: 12px 20px;
@@ -2514,7 +2514,7 @@
       }
 
       & p {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         padding-bottom: 10px;
         color: var(--tp-text-body);
@@ -2571,8 +2571,8 @@
     background-color: var(--tp-common-white);
 
     &-title {
-      font-size: 18px;
-      font-weight: 600;
+      font-size: 14px;
+      font-weight: 500;
       color: var(--tp-heading-primary);
     }
 
@@ -2588,7 +2588,7 @@
           }
 
           & p {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 28px;
             color: #262b35;
@@ -2658,7 +2658,7 @@
       margin-bottom: 30px;
 
       & label {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         margin-bottom: 10px;
         color: var(--tp-common-black);
@@ -2702,7 +2702,7 @@
         & label {
           display: inline-block !important;
           text-align: center;
-          font-size: 18px;
+          font-size: 14px;
           font-weight: 500;
           padding: 10px 20px;
           cursor: pointer;
@@ -2755,7 +2755,7 @@
           position: absolute;
           right: 10px;
           top: 10px;
-          font-size: 16px;
+          font-size: 14px;
           border-radius: 50%;
           width: 30px;
           height: 30px;
@@ -2778,7 +2778,7 @@
 
     &-cheking {
       & p {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         line-height: 1;
         margin-bottom: 20px;
@@ -2795,7 +2795,7 @@
         position: relative;
         overflow: hidden;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.26;
         padding: 19px 35px 17px;
         display: inline-block;
@@ -2894,8 +2894,8 @@
 
     &-inner {
       & h4 {
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 500;
         margin-bottom: 8px;
         color: var(--tp-common-black);
       }
@@ -2915,7 +2915,7 @@
 
     &-btn {
       & a {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         padding: 10px 20px;
         display: inline-block;

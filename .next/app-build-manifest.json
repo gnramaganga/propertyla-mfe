@@ -17,6 +17,17 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
+    "/(RealEstate)/search/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(RealEstate)/search/layout.js"
+    ],
+    "/(RealEstate)/search/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(RealEstate)/search/page.css",
+      "static/chunks/app/(RealEstate)/search/page.js"
+    ],
     "/(pages)/sign-in/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -36,6 +47,37 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/sign-up/page.js"
+    ],
+    "/(pages)/verify/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/verify/layout.js"
+    ],
+    "/(pages)/verify/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/verify/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
+    ],
+    "/(dashboard)/dashboard/add-new-property/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(dashboard)/dashboard/add-new-property/page.css",
+      "static/chunks/app/(dashboard)/dashboard/add-new-property/page.js"
+    ],
+    "/(RealEstate)/property-details/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(RealEstate)/property-details/layout.js"
+    ],
+    "/(RealEstate)/property-details/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(RealEstate)/property-details/[id]/page.js"
     ]
   }
 }

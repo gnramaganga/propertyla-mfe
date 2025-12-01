@@ -1,32 +1,32 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
 
 /*----------------------------------------*/
 /*  7.4 Apartment Css
 /*----------------------------------------*/
 
-.#{$theme-prefix}-apartment{
-  &-wrap{
-    flex-wrap: wrap
+.#{$theme-prefix}-apartment {
+  &-wrap {
+    flex-wrap: wrap;
   }
-  &-item{
+  &-item {
     margin-right: 30px;
     @include transition();
     padding: 13px 48px 13px 20px;
     background-color: var(--tp-theme-secondary);
-    &:hover{
+    &:hover {
       border-radius: 50px;
-      & .tp-apartment-item-icon{
-        & span{
+      & .tp-apartment-item-icon {
+        & span {
           background-color: var(--tp-theme-primary);
-          & img{
+          & img {
             filter: brightness(0) invert(1);
           }
         }
       }
     }
-    &-icon{
+    &-icon {
       margin-right: 15px;
-      & span{
+      & span {
         display: inline-block;
         text-align: center;
         height: 80px;
@@ -35,46 +35,45 @@
         border-radius: 50%;
         @include transition();
         background-color: var(--tp-common-white);
-        & img{
+        & img {
           @include transition();
         }
       }
     }
-    &-title{
-      font-size: 20px;
-      font-weight: 700;
+    &-title {
+      font-size: 14px;
+      font-weight: 600;
       margin-bottom: 2px;
       letter-spacing: -0.4px;
       color: var(--tp-heading-primary);
     }
-    &-content{
-      & p{
+    &-content {
+      & p {
         font-weight: 500;
         margin: 0;
       }
     }
   }
-  &-wrapper{
-    & .tp-section-title{
+  &-wrapper {
+    & .tp-section-title {
       margin-bottom: 40px;
     }
   }
 }
 
-
-.#{$theme-prefix}-apartment{
-  &-ptb{
+.#{$theme-prefix}-apartment {
+  &-ptb {
     @media #{$md,$xs} {
       padding-top: 80px;
       padding-bottom: 80px;
     }
   }
-  &-wrap-2{
+  &-wrap-2 {
     flex-wrap: wrap;
-    & .tp-apartment-item{
-      border: 1px solid #CAD3E9;
+    & .tp-apartment-item {
+      border: 1px solid #cad3e9;
       background-color: transparent;
-      &:hover{
+      &:hover {
         border-color: var(--tp-common-white);
         background-color: var(--tp-common-white);
       }
@@ -82,13 +81,12 @@
   }
 }
 
-
-.#{$theme-prefix}-newsletter{
-  &-input{
-    & input{
+.#{$theme-prefix}-newsletter {
+  &-input {
+    & input {
       padding-right: 150px;
     }
-    & button{
+    & button {
       position: absolute;
       top: 50%;
       right: 6px;
@@ -96,43 +94,43 @@
       transform: translateY(-50%);
     }
   }
-  &-wrap{
-    & span{
+  &-wrap {
+    & span {
       display: inline-block;
       margin-top: 12px;
       font-size: 12px;
       line-height: 20px;
-      & a{
+      & a {
         text-decoration-line: underline;
-        &:hover{
+        &:hover {
           color: var(--tp-heading-primary);
         }
       }
     }
   }
-  &-content{
+  &-content {
     @media #{$md,$xs} {
       display: none;
     }
-    & .tp-apartment-item{
+    & .tp-apartment-item {
       position: absolute;
       top: 60px;
       left: 160px;
       width: 266px;
       border-radius: 50px;
       padding: 10px 38px 10px 10px;
-      &-title{
+      &-title {
         color: var(--tp-theme-primary);
       }
-      &-content{
-        & p{
+      &-content {
+        & p {
           font-size: 14px;
           font-weight: 400;
         }
       }
     }
   }
-  &-item{
+  &-item {
     position: absolute;
     top: 140px;
     right: -178px;
@@ -140,21 +138,21 @@
       top: 200px;
       right: 0;
     }
-    &.two{
+    &.two {
       position: absolute;
       bottom: -390px;
       right: 0;
       top: auto;
     }
-    & span{
-      font-size: 18px;
-      font-weight: 600;
+    & span {
+      font-size: 14px;
+      font-weight: 500;
       border-radius: 50px;
       padding: 7px 16px 9px;
       color: var(--tp-heading-primary);
       background-color: var(--tp-common-white);
       display: inline-block;
-      & svg{
+      & svg {
         transform: translateY(-2px);
       }
     }

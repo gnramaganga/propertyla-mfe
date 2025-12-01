@@ -4,7 +4,6 @@ import FilterBtnSvg from "@/components/SVG/BannerSvg/FilterBtnSvg";
 import { propertyStates } from "@/data/dropdownData";
 import NiceSelect from "@/components/UI/NiceSelect";
 import { ITabContentProps } from "@/types/banner-d-t";
-import ErrorMessage from "../../../components/Form/ErrorMassage";
 import PlaceSearch from "./PlaceSearch";
 
 // TabContent Component
@@ -14,7 +13,6 @@ export default function HeroBannerTabContent({
   //onSortChange,
   toggleFilter,
 }: ITabContentProps) {
-  const [error, setError] = useState(false);
   const router = useRouter();
   const [place, setPlace] = useState<string>("");
   const [city, setCity] = useState<string>("");
@@ -27,10 +25,6 @@ export default function HeroBannerTabContent({
   };
 
   const getProperties = () => {
-    if (!place.trim()) {
-      setError(true);
-      return;
-    }
     console.log("place", place);
     const query = new URLSearchParams({
       address: place,
@@ -88,11 +82,6 @@ export default function HeroBannerTabContent({
               </button>
             </div>
           </div>
-          {error ? (
-            <ErrorMessage message="Please enter location or property name" />
-          ) : (
-            <div></div>
-          )}
         </div>
       </div>
     </div>
