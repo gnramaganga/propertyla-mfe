@@ -72,9 +72,8 @@ export const CountryTypeOptions = [
   { value: "TokiyoJapan", label: "Tokiyo Japan" },
 ];
 export const propertyStates = [
-  { value: "", label: "All States" },
-  { value: "Selangor", label: "Selangor" },
   { value: "Kuala Lumpur", label: "Kuala Lumpur" },
+  { value: "Selangor", label: "Selangor" },
   { value: "Johor", label: "Johor" },
 ];
 export const listingTypes = [

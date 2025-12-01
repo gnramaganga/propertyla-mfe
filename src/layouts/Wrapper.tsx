@@ -22,7 +22,7 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
 
   // Set the loading state to false after a timeout
   useEffect(() => {
-    const loadingTimeout = setTimeout(() => setIsLoading(false), 1000);
+    const loadingTimeout = setTimeout(() => setIsLoading(false), 200);
     return () => clearTimeout(loadingTimeout);
   }, []);
 
@@ -43,11 +43,13 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
     }
   }, []);
 
-  return <>
-    {isLoading ? <Preloader /> : children}
-    {/* Add this below children */}
-    <AnimateMouse />
-  </>;
+  return (
+    <>
+      {isLoading ? <Preloader /> : children}
+      {/* Add this below children */}
+      <AnimateMouse />
+    </>
+  );
 };
 
 export default Wrapper;

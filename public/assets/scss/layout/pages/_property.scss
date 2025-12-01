@@ -17,7 +17,7 @@
   }
   &-list {
     & span {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 500;
       color: #80858f;
       letter-spacing: -0.36px;
@@ -47,12 +47,12 @@
         display: inline-block;
       }
       & .nice-select {
-        font-size: 16px;
+        font-size: 14px;
         width: 370px;
-        height: 60px;
+        height: 50px;
         border-radius: 0;
         font-weight: 500;
-        line-height: 60px;
+        line-height: 50px;
         border: 1px solid #dbe1ef;
         @media #{$lg,$xs} {
           width: 300px;
@@ -105,7 +105,7 @@
       background-color: #f0f4fd;
     }
     &-title {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 600;
     }
     &-item {
@@ -169,7 +169,7 @@
   }
   &-recent-post {
     &-title {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
       line-height: 18px;
       margin-bottom: 5px;
@@ -207,7 +207,7 @@
 .#{$theme-prefix}-property-details {
   &-title {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 15px;
     letter-spacing: -0.72px;
     color: var(--tp-heading-primary);
@@ -281,8 +281,8 @@
       box-shadow: none;
     }
     &-title {
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 600;
       margin-bottom: 32px;
       padding-bottom: 28px;
       border-bottom: 1px solid #e6e6e6;
@@ -317,8 +317,8 @@
         color: var(--tp-text-body);
       }
       & p {
-        font-size: 18px;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: 500;
         line-height: 1;
         color: var(--tp-heading-primary);
       }
@@ -385,7 +385,7 @@
       margin-right: 15px;
     }
     &-title {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
       margin-bottom: 0;
     }
@@ -436,7 +436,7 @@
       & .nav {
         border: none;
         & .nav-link {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
           padding: 7px 19px;
           display: inline-block;
@@ -459,7 +459,7 @@
       }
       & p {
         position: relative;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
         line-height: 1;
         &:not(:last-child) {
@@ -500,8 +500,8 @@
     display: inline-block;
     & .nice-select {
       border-radius: 0;
-      height: 60px;
-      line-height: 60px;
+      height: 50px;
+      line-height: 50px;
       border: 1px solid #dde4f5;
       &:focus {
         border-color: var(--tp-theme-primary);

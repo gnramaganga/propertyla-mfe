@@ -21,10 +21,10 @@ export default function HomeOnePage() {
       <HeroBannerOne />
       {/* hero banner end */}
       {/*feature area*/}
-      <FeatureShowcaseCategory />
+      {/* <FeatureShowcaseCategory /> */}
       {/*feature area end*/}
       {/* about area  */}
-      <AboutHomeMain />
+      {/* <AboutHomeMain /> */}
       {/* about area end */}
       {/* apartment area type*/}
       <HomeApartmentTypes />
@@ -46,13 +46,13 @@ export default function HomeOnePage() {
       {/* <HomeApproachCounter /> */}
       {/* counter area end */}
       {/* testimonial area */}
-      <HomeTestimonialArea />
+      {/* <HomeTestimonialArea /> */}
       {/* testimonial area end */}
       {/* text slide */}
       {/* <TextSlide /> */}
       {/* text slide end*/}
       {/* team area */}
-      <TeamAgentsArea />
+      {/* <TeamAgentsArea /> */}
       {/* team area end*/}
       {/* barnd area */}
       {/* <BrandAreaOne /> */}

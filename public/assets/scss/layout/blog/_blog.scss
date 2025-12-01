@@ -26,7 +26,7 @@
     }
     &-title {
       font-size: 22px;
-      font-weight: 700;
+      font-weight: 600;
       padding-bottom: 15px;
       margin-bottom: 20px;
       border-bottom: 1px solid #d8e0f1;
@@ -60,7 +60,7 @@
     }
     &-content {
       & h6 {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1;
         margin-bottom: 0;
       }
@@ -105,7 +105,7 @@
   }
   &-title {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 32px;
     margin-bottom: 12px;
     letter-spacing: -0.48px;
@@ -137,7 +137,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
     display: inline-block;
     text-align: center;
@@ -162,7 +162,7 @@
   &-btn {
     & a {
       display: inline-block;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
       padding: 9px 29px;
       color: var(--tp-heading-primary);
@@ -244,7 +244,7 @@
       }
     }
     &-title {
-      font-weight: 700;
+      font-weight: 600;
       padding-bottom: 30px;
       margin-bottom: 16px;
       @include transition();
