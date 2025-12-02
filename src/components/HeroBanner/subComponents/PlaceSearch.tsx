@@ -44,7 +44,7 @@ const PlaceSearch: React.FC<PlaceSearchProps> = ({
         placeholder={placeholder || "Search location"}
         style={{
           width: "100%",
-          padding: "10px 12px",
+          padding: "24px 12px",
           fontSize: "16px",
           borderRadius: "8px",
           border: "1px solid #e8e8e8",

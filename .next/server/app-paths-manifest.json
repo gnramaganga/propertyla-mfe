@@ -1,8 +1,9 @@
 {
   "/page": "app/page.js",
+  "/(dashboard)/dashboard/property/page": "app/(dashboard)/dashboard/property/page.js",
   "/(dashboard)/dashboard/add-new-property/page": "app/(dashboard)/dashboard/add-new-property/page.js",
+  "/(shop)/wishlist/page": "app/(shop)/wishlist/page.js",
+  "/(RealEstate)/search/page": "app/(RealEstate)/search/page.js",
   "/(pages)/sign-in/page": "app/(pages)/sign-in/page.js",
-  "/(pages)/sign-up/page": "app/(pages)/sign-up/page.js",
-  "/(RealEstate)/property-details/[id]/page": "app/(RealEstate)/property-details/[id]/page.js",
-  "/(RealEstate)/search/page": "app/(RealEstate)/search/page.js"
+  "/(pages)/sign-up/page": "app/(pages)/sign-up/page.js"
 }

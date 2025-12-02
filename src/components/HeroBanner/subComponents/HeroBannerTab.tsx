@@ -20,7 +20,7 @@ export default function HeroBannerTabContent({
     setPlace(selected);
   };
 
-  const onStateChange = (e) => {
+  const onStateChange = (e: any) => {
     setCity(e.value);
   };
 
@@ -72,10 +72,7 @@ export default function HeroBannerTabContent({
               </button>
             </div>
           </div>
-          <div
-            className="col-xs-6 col-xl-2 col-lg-2"
-            style={{ paddingRight: "0px" }}
-          >
+          <div className="col-xs-6 col-xl-2 col-lg-2">
             <div className="tp-hero-tab-search">
               <button style={{ width: "100%" }} onClick={() => getProperties()}>
                 Search

@@ -37,8 +37,8 @@
         & button {
           & em {
             color: var(--tp-common-white);
-            background-color: #5959d1;
-            border: 2px solid #595ad3;
+            background-color: #e9455bc7;
+            border: 2px solid #e9455bc7;
           }
         }
       }
@@ -71,8 +71,8 @@
         & a {
           & em {
             color: var(--tp-common-white);
-            background-color: #5959d1;
-            border: 2px solid #595ad3;
+            background-color: #e9455bc7;
+            border: 2px solid #e9455bc7;
           }
         }
       }
@@ -97,8 +97,8 @@
             & button {
               & em {
                 color: var(--tp-common-white);
-                background-color: #5959d1;
-                border: 2px solid #595ad3;
+                background-color: #e9455bc7;
+                border: 2px solid #e9455bc7;
               }
             }
           }
@@ -119,8 +119,8 @@
             & a {
               & em {
                 color: var(--tp-common-white);
-                background-color: #5959d1;
-                border: 2px solid #595ad3;
+                background-color: #e9455bc7;
+                border: 2px solid #e9455bc7;
               }
             }
           }
@@ -157,8 +157,8 @@
       position: relative;
 
       & img {
-        height: 60px;
-        width: 60px;
+        height: 30px;
+        width: 30px;
         object-fit: cover;
         border-radius: 50%;
       }
@@ -2470,6 +2470,7 @@
         padding: 12px 20px;
         display: inline-block;
         color: var(--tp-heading-primary);
+        border-radius: 8px;
 
         & span {
           display: inline-block;
@@ -2795,9 +2796,9 @@
         position: relative;
         overflow: hidden;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.26;
-        padding: 19px 35px 17px;
+        padding: 15px 30px 15px;
         display: inline-block;
         color: var(--tp-common-white);
         border: 1px solid transparent;

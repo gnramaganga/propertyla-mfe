@@ -85,7 +85,7 @@
   border-radius: 8px;
 }
 .tp-sign-in-register-title {
-  font-size: 34px;
+  font-size: 25px;
   font-weight: 600;
   letter-spacing: -1.02px;
 }
@@ -98,12 +98,18 @@
 .input-range {
   padding-left: 60px;
 }
+.tab-top-home {
+  margin-top: 15%;
+}
 @media only screen and (max-width: 767px) {
   .marTop20 {
     margin-top: 20px;
   }
   .tp-dashboard-main {
     padding: 10px;
+  }
+  .tab-top-home {
+    margin-top: 0% !important;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {

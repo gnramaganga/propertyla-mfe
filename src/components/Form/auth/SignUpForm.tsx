@@ -63,7 +63,7 @@ export default function SignUpForm() {
     radioInput: {
       width: "16px",
       height: "16px",
-      accentColor: "#0070f3", // modern browsers support this
+      accentColor: "#e9455bc7", // modern browsers support this
       cursor: "pointer",
       marginRight: "0px",
     },
@@ -112,7 +112,7 @@ export default function SignUpForm() {
         <div className="col-12">
           <div
             className="tp-cart-coupon-input"
-            style={{ marginBottom: "10px" }}
+            style={{ marginBottom: "15px" }}
           >
             <label style={{ float: "left", marginRight: "20px" }}>
               Are you ?
@@ -320,7 +320,11 @@ export default function SignUpForm() {
             </div>
           </div>
           <div className="tp-sign-in-from-btn mb-30">
-            <button type="submit" className="tp-btn w-100 text-center">
+            <button
+              type="submit"
+              className="tp-btn w-100 text-center"
+              style={{ padding: "10px 20px 10px" }}
+            >
               Sign Up
             </button>
           </div>

@@ -86,11 +86,11 @@
     &-user {
       &-icon {
         & span {
-          height: 44px;
-          width: 44px;
+          height: 32px;
+          width: 32px;
           margin-right: 10px;
           text-align: center;
-          line-height: 40px;
+          line-height: 32px;
           border-radius: 50%;
           display: inline-block;
           @include transition();

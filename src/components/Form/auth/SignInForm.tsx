@@ -129,7 +129,11 @@ export default function SignInForm() {
             </div>
           </div>
           <div className="tp-sign-in-from-btn mb-30">
-            <button type="submit" className="tp-btn w-100 text-center">
+            <button
+              type="submit"
+              className="tp-btn w-100 text-center"
+              style={{ padding: "10px 20px 10px" }}
+            >
               Login
             </button>
           </div>

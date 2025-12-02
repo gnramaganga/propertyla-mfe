@@ -78,10 +78,10 @@ export default function HeaderOne() {
                   </span>
                 </Link>
               </div>
-              <div className="tp-header-right-user-content">
+              {/* <div className="tp-header-right-user-content">
                 <p>Hi, Sign In</p>
                 <span>Your Account</span>
-              </div>
+              </div> */}
             </div>
             <div className="tp-header-hamburger d-xl-none offcanvas-open-btn">
               <button onClick={toggleOffcanvas} className="hamburger-btn">

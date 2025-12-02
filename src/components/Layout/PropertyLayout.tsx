@@ -77,10 +77,7 @@ export default function PropertyLayout({ children }: { children: ReactNode }) {
                     />
                   </div>
                 </div>
-                <div
-                  className="col-xs-6 col-xl-2 col-lg-2"
-                  style={{ paddingRight: "0px" }}
-                >
+                <div className="col-xs-6 col-xl-2 col-lg-2">
                   <div className="tp-hero-tab-search">
                     <button
                       style={{ width: "100%" }}

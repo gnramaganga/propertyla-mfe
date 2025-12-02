@@ -28,7 +28,7 @@ export default function HeroBannerOne() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="tp-hero-content" style={{ marginTop: "15%" }}>
+              <div className="tp-hero-content tab-top-home">
                 <div
                   className="tp-hero-tab p-relative wow fadeInUp"
                   data-wow-duration="1s"

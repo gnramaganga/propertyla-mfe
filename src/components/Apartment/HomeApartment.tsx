@@ -12,12 +12,12 @@ export default function HomeApartmentArea() {
           <div className="col-lg-12">
             <div className="tp-apartment-wrapper text-center">
               <h3 className="tp-section-title">
-                Join with us and <br /> experience today
+                latest properties in Malaysia
               </h3>
               <Link className="tp-btn" href="/search">
                 <span className="btn-wrap">
-                  <b className="text-1">Discover Apartments</b>
-                  <b className="text-2">Discover Apartments</b>
+                  <b className="text-1">Discover</b>
+                  <b className="text-2">Discover</b>
                 </span>
               </Link>
             </div>
