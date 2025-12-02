@@ -52,7 +52,7 @@ export default function HeaderOne() {
         </div>
         <div className="col-xl-2 col-lg-2 col-md-4 col-3">
           <div className="tp-header-dashboard-btn d-none d-md-block">
-            <Link className="tp-btn" href="/dashboard/add-new-property">
+            <Link className="tp-btn" href="/add-new-property">
               <span className="btn-wrap">
                 <b className="text-1">Post Property</b>
                 <b className="text-2">Post Property</b>

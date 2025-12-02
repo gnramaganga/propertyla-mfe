@@ -48,11 +48,6 @@ const Sidebar = () => {
     title: "Manage listing",
     items: [
       {
-        href: "/dashboard/add-new-property",
-        label: "Add new property",
-        icon: <AddPropertySvg />,
-      },
-      {
         href: "/dashboard/property",
         label: "My properties",
         icon: <MyPropertiesSvg />,
@@ -88,7 +83,7 @@ const Sidebar = () => {
 
   // Sidebar render function with active class logic
   const renderSection = (section: SidebarSection) => (
-    <div className="tp-dashboard-sidebar-content pb-70">
+    <div className="tp-dashboard-sidebar-content pb-40">
       <h4 className="tp-dashboard-sidebar-title">{section.title}</h4>
       {section.items.map((item, index) => (
         <div className="tp-dashboard-sidebar-item" key={index}>

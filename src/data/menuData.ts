@@ -140,7 +140,7 @@ const menu_data_one = [
     label: "Dashboard",
     url: "/dashboard",
     submenu: [
-      { id: 1, label: "Add New Listing", url: "/dashboard/add-new-property" },
+      { id: 1, label: "Add New Listing", url: "/add-new-property" },
       { id: 2, label: "My Profile", url: "/dashboard/my-profile" },
       { id: 3, label: "My Properties", url: "/dashboard/property" },
       { id: 4, label: "Favourites", url: "/dashboard/favourite" },

@@ -20,14 +20,14 @@ const features = [
     id: 2,
     title: "Sell a property",
     icon: featureIcon2,
-    link: "/dashboard/add-new-property",
+    link: "/add-new-property",
     delay: "0.7s",
   },
   {
     id: 3,
     title: "Rent a property",
     icon: featureIcon3,
-    link: "/dashboard/add-new-property",
+    link: "/add-new-property",
     delay: "0.3s",
   },
 ];

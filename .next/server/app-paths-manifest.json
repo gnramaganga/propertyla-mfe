@@ -1,9 +1,8 @@
 {
   "/page": "app/page.js",
-  "/(dashboard)/dashboard/property/page": "app/(dashboard)/dashboard/property/page.js",
-  "/(dashboard)/dashboard/add-new-property/page": "app/(dashboard)/dashboard/add-new-property/page.js",
-  "/(shop)/wishlist/page": "app/(shop)/wishlist/page.js",
+  "/add-new-property/page": "app/add-new-property/page.js",
+  "/(dashboard)/dashboard/my-profile/page": "app/(dashboard)/dashboard/my-profile/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/(RealEstate)/search/page": "app/(RealEstate)/search/page.js",
-  "/(pages)/sign-in/page": "app/(pages)/sign-in/page.js",
-  "/(pages)/sign-up/page": "app/(pages)/sign-up/page.js"
+  "/(pages)/error/page": "app/(pages)/error/page.js"
 }
