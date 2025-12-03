@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { propertySchema, PropertyFormData } from "@/schemas/validationSchema";
 import BasicDetails from "./BasicDetails";
 import LocationDetails from "./LocationDetails";
+import LocationPickerMap from "./LocationPickerMap";
 import PropertyDetails from "./PropertyDetails";
 import AmenitiesDetails from "./AmenitiesDetails";
 import UploadMedia from "./UploadMedia";
@@ -27,6 +28,7 @@ export default function AddPropertyPage() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <BasicDetails />
         <LocationDetails />
+        <LocationPickerMap />
         <PropertyDetails />
         <AmenitiesDetails />
         <UploadMedia />

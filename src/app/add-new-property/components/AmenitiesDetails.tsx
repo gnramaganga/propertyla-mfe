@@ -31,6 +31,9 @@ const amenityGroups: AmenityGroup[] = [
       "Parcel Locker",
       "Laundry Room",
       "Cafeteria",
+      "Close to Hospital",
+      "Close to Metro Station",
+      "Close to Shopping Mall",
     ],
   },
   {

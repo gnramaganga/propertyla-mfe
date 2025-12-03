@@ -66,6 +66,38 @@ export default function BasicDetails() {
         <div className="row">
           <div className="col-lg-4">
             <div className="tp-dashboard-new-input">
+              <label>Age of property</label>
+              <div className="tp-property-tabs-select tp-select">
+                <select {...register("ageOfProperty")} className="listDropDown">
+                  <option value="0-1 years">0-1 years</option>
+                  <option value="1-5 years">1-5 years</option>
+                  <option value="5-10 years">5-10 years</option>
+                  <option value="10+ years">10+ years</option>
+                </select>
+              </div>
+              <div>
+                {errors.ageOfProperty && (
+                  <p className="err-msg">{errors.ageOfProperty.message}</p>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="tp-dashboard-new-input">
+              <label>Floor Level</label>
+              <input
+                className="textBox"
+                type="number"
+                {...register("floorLevel")}
+                placeholder="Enter floor number"
+              />
+              {errors.floorLevel && (
+                <p className="err-msg">{errors.floorLevel.message}</p>
+              )}
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="tp-dashboard-new-input">
               <label>Bed Rooms</label>
               <div className="tp-property-tabs-select tp-select">
                 <select {...register("bedRooms")} className="listDropDown">
@@ -84,6 +116,8 @@ export default function BasicDetails() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="row">
           <div className="col-lg-4">
             <div className="tp-dashboard-new-input">
               <label>Bath Rooms</label>
@@ -106,6 +140,61 @@ export default function BasicDetails() {
           </div>
           <div className="col-lg-4">
             <div className="tp-dashboard-new-input">
+              <label>Parking</label>
+              <div className="tp-property-tabs-select tp-select">
+                <select {...register("parkings")} className="listDropDown">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="2">3</option>
+                  <option value="2">4</option>
+                </select>
+              </div>
+              <div>
+                {errors.parkings && (
+                  <p className="err-msg">{errors.parkings.message}</p>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="tp-dashboard-new-input">
+              <label>Balcony</label>
+              <div className="tp-property-tabs-select tp-select">
+                <select {...register("balconies")} className="listDropDown">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="2">3</option>
+                  <option value="2">4</option>
+                </select>
+              </div>
+              <div>
+                {errors.balconies && (
+                  <p className="err-msg">{errors.balconies.message}</p>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-lg-4">
+            <div className="tp-dashboard-new-input">
+              <label>Ownership</label>
+              <div className="tp-property-tabs-select tp-select">
+                <select {...register("ownership")} className="listDropDown">
+                  <option value="Yes">Freehold</option>
+                  <option value="No">Leasehold</option>
+                </select>
+              </div>
+              <div>
+                {errors.ownership && (
+                  <p className="err-msg">{errors.ownership.message}</p>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="tp-dashboard-new-input">
               <label>Availability</label>
               <div className="tp-property-tabs-select tp-select">
                 <select {...register("availability")} className="listDropDown">
@@ -119,36 +208,6 @@ export default function BasicDetails() {
                   <p className="err-msg">{errors.availability.message}</p>
                 )}
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-4">
-            <div className="tp-dashboard-new-input">
-              <label>Floor Level</label>
-              <input
-                className="textBox"
-                type="number"
-                {...register("floorLevel")}
-                placeholder="Enter floor number"
-              />
-              {errors.floorLevel && (
-                <p className="err-msg">{errors.floorLevel.message}</p>
-              )}
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="tp-dashboard-new-input">
-              <label>Year Of Built</label>
-              <input
-                className="textBox"
-                type="number"
-                {...register("yearBuilt")}
-                placeholder="Enter built year"
-              />
-              {errors.yearBuilt && (
-                <p className="err-msg">{errors.yearBuilt.message}</p>
-              )}
             </div>
           </div>
           <div className="col-lg-4">

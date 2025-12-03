@@ -1,8 +1,6 @@
 {
   "/page": "app/page.js",
   "/add-new-property/page": "app/add-new-property/page.js",
-  "/(dashboard)/dashboard/my-profile/page": "app/(dashboard)/dashboard/my-profile/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/(RealEstate)/search/page": "app/(RealEstate)/search/page.js",
-  "/(pages)/error/page": "app/(pages)/error/page.js"
+  "/(shop)/wishlist/page": "app/(shop)/wishlist/page.js",
+  "/(pages)/agency-details/page": "app/(pages)/agency-details/page.js"
 }

@@ -14,53 +14,39 @@ export default function LocationDetails() {
       <h5 className="tp-dashboard-new-title">Location Details</h5>
       <div className="tp-dashboard-new-property-box">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-8">
             <div className="tp-dashboard-new-input">
-              <label>Property Name</label>
+              <label>Full Address</label>
               <input
                 className="textBox"
                 type="text"
-                {...register("propertyName")}
+                {...register("fullAddress")}
                 placeholder="The Horizon Residences"
               />
-              {errors.propertyName && (
-                <p className="err-msg">{errors.propertyName.message}</p>
+              {errors.fullAddress && (
+                <p className="err-msg">{errors.fullAddress.message}</p>
               )}
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-4">
             <div className="tp-dashboard-new-input">
-              <label>Street Name</label>
+              <label>Zip Code</label>
               <input
                 className="textBox"
                 type="text"
-                {...register("streetName")}
-                placeholder="Enter street name"
+                {...register("pinCode")}
+                placeholder="Enter property name"
               />
-              {errors.streetName && (
-                <p className="err-msg">{errors.streetName.message}</p>
+              {errors.pinCode && (
+                <p className="err-msg">{errors.pinCode.message}</p>
               )}
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-4">
             <div className="tp-dashboard-new-input">
-              <label>City Name</label>
-              <input
-                className="textBox"
-                type="text"
-                {...register("cityName")}
-                placeholder="Enter city name"
-              />
-              {errors.cityName && (
-                <p className="err-msg">{errors.cityName.message}</p>
-              )}
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <div className="tp-dashboard-new-input">
-              <label>State</label>
+              <label>Province/State</label>
               <div className="tp-property-tabs-select tp-select">
                 <select {...register("stateName")} className="listDropDown">
                   <option value="">Select</option>
@@ -76,9 +62,7 @@ export default function LocationDetails() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-4">
             <div className="tp-dashboard-new-input">
               <label>Country</label>
               <div className="tp-property-tabs-select tp-select">
@@ -93,23 +77,7 @@ export default function LocationDetails() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
-            <div className="tp-dashboard-new-input">
-              <label>Pin Code</label>
-              <input
-                className="textBox"
-                type="text"
-                {...register("pinCode")}
-                placeholder="Enter property name"
-              />
-              {errors.pinCode && (
-                <p className="err-msg">{errors.pinCode.message}</p>
-              )}
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-4">
             <div className="tp-dashboard-new-input">
               <label>Landmark</label>
               <input
@@ -124,6 +92,8 @@ export default function LocationDetails() {
             </div>
           </div>
         </div>
+        <div className="row"></div>
+        <div className="row"></div>
       </div>
     </div>
   );

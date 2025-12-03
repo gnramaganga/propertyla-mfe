@@ -50,11 +50,10 @@ export const propertySchema = yup.object({
   listingType: yup.string().required("Listing type is required"),
   propertyName: yup.string().required("Property name is required"),
   propertyType: yup.string().required("Property type is required"),
-  tenure: yup.string().required("Tenureis required"),
-  title: yup.string().required("Title is required"),
+  tenure: yup.string().required("Tenure is required"),
+  phoneNumber: yup.string().required("Phone number is required"),
+  fullAddress: yup.string().required("Address is required"),
   description: yup.string().required("Description is required"),
-  streetName: yup.string().required("Street name is required"),
-  cityName: yup.string().required("City name is required"),
   stateName: yup.string().required("State is required"),
   countryName: yup.string().required("Country is required"),
   pinCode: yup.string().required("Pin Code is required"),
@@ -68,18 +67,17 @@ export const propertySchema = yup.object({
   furnishing: yup.string().required("Furnishing type is required"),
   bedRooms: yup.string().required("Bed rooms are required"),
   bathRooms: yup.string().required("Bath rooms are required"),
+  parkings: yup.string().required("Parkings are required"),
+  balconies: yup.string().required("Balconies are required"),
+  ageOfProperty: yup.string().required("Age of property is required"),
   availability: yup.string().required("Availability is required"),
   negotiable: yup.string().required("Negotiable is required"),
+  ownership: yup.string().required("Ownership is required"),
   floorLevel: yup
     .number()
     .typeError("Floor Number must be a number")
     .positive("Floor Number must be greater than zero")
     .required("Floor Number is required"),
-  yearBuilt: yup
-    .number()
-    .typeError("Year of build must be a number")
-    .positive("Year of build must be greater than zero")
-    .required("Year of build is required"),
   amenities: yup
     .array()
     .of(yup.string())
