@@ -52686,6 +52686,17 @@ div.demo img {
   height: 45px;
 }
 
+.verticl-progress-bar {
+  padding-top: 30px;
+  padding-left: 50px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.tp-dashboard-new-property {
+  border-radius: 8px;
+}
+
 .tp-header-1-menu nav > ul {
   text-align: start;
   padding: 4px;

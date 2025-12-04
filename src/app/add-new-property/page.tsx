@@ -1,5 +1,6 @@
 import propertyBg from "../../../public/assets/img/rent/property-bg.jpg";
 import AddPropertyMain from "./components/AddPropertyMain";
+import VerticalProgress from "./components/VerticalProgress";
 import { Metadata } from "next";
 import BackToTop from "@/components/Common/BackToTop";
 import FooterStyleTwo from "@/layouts/Footers/FooterStyleTwo";
@@ -21,14 +22,11 @@ export default function AddProperty() {
         >
           <div className="container">
             <div className="row">
-              <div className="col-lg-2">
-                <span>progress bar</span>
+              <div className="col-lg-3">
+                <VerticalProgress currentStep={3} />
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-9">
                 <AddPropertyMain />
-              </div>
-              <div className="col-lg-2">
-                <span>Advertisements</span>
               </div>
             </div>
           </div>

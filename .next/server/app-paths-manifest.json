@@ -1,6 +1,5 @@
 {
   "/page": "app/page.js",
   "/add-new-property/page": "app/add-new-property/page.js",
-  "/(shop)/wishlist/page": "app/(shop)/wishlist/page.js",
-  "/(pages)/agency-details/page": "app/(pages)/agency-details/page.js"
+  "/(RealEstate)/search/page": "app/(RealEstate)/search/page.js"
 }
