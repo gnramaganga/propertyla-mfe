@@ -44,7 +44,7 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
 
   return (
     <div
-      style={{ border: "1px solid #DBE1EF" }}
+      style={{ border: "1px solid #DBE1EF", borderRadius: "8px" }}
       className={`row tp-rent-item p-relative ${item.spacing && "mb-30"} ${
         item.wowAnimation && "wow fadeInUp"
       }`}
@@ -55,7 +55,12 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
         <Link href={`/${item.linkUrl}/${item.id}`}>
           <Image
             src={item.image}
-            style={{ width: "100%", height: "auto" }}
+            style={{
+              width: "100%",
+              height: "auto",
+              marginTop: "13px",
+              borderRadius: "5px",
+            }}
             alt={item.title}
           />
         </Link>

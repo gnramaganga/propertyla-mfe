@@ -1,5 +1,8 @@
 {
   "/page": "app/page.js",
   "/add-new-property/page": "app/add-new-property/page.js",
+  "/(pages)/sign-up/page": "app/(pages)/sign-up/page.js",
+  "/(pages)/verify/page": "app/(pages)/verify/page.js",
+  "/(pages)/sign-in/page": "app/(pages)/sign-in/page.js",
   "/(RealEstate)/search/page": "app/(RealEstate)/search/page.js"
 }

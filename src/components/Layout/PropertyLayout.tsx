@@ -57,7 +57,7 @@ export default function PropertyLayout({ children }: { children: ReactNode }) {
                   </span>
                 </div>
               </div>
-              <div className="row" style={{ width: "100%" }}>
+              <div className="row">
                 <div className="col-xs-12 col-xl-3 col-lg-3">
                   <div className="tp-hero-tab-select tp-select">
                     <NiceSelect
@@ -90,15 +90,15 @@ export default function PropertyLayout({ children }: { children: ReactNode }) {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-8">
-              {/* Main content section */}
-              {children}
-            </div>
+          <div className="row mrd0">
             <div className="col-lg-4">
               <PropertyFilterWidget />
               <SidebarPropertyItem customClass="tp-team-details-item" />
               <DiscountOfferCard />
+            </div>
+            <div className="col-lg-8">
+              {/* Main content section */}
+              {children}
             </div>
           </div>
         </div>

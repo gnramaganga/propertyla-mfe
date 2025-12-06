@@ -52708,6 +52708,7 @@ div.demo img {
 .gsrch {
   background: #fff;
   margin-right: 0px;
+  margin-left: 0px;
   padding-top: 20px;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -52811,6 +52812,14 @@ div.demo img {
   margin-top: 15%;
 }
 
+.mrd0 {
+  margin-right: 0px !important;
+}
+
+.tp-property-filter-wrap {
+  border-radius: 8px;
+}
+
 @media only screen and (max-width: 767px) {
   .marTop20 {
     margin-top: 20px;
@@ -52820,5 +52829,8 @@ div.demo img {
   }
   .tab-top-home {
     margin-top: 0% !important;
+  }
+  .mrd0 {
+    margin-right: -15px !important;
   }
 }
