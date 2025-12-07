@@ -10,7 +10,7 @@ const apartmentTypes = [
   { id: 1, title: "Condo", image: ApartmentIcon1, properties: 15 },
   { id: 2, title: "Banglow", image: ApartmentIcon2, properties: 28 },
   { id: 3, title: "Apartments", image: ApartmentIcon3, properties: 25 },
-  { id: 4, title: "Town home", image: ApartmentIcon4, properties: 30 },
+  { id: 4, title: "Landed House", image: ApartmentIcon4, properties: 30 },
   { id: 5, title: "Offices", image: ApartmentIcon5, properties: 25 },
   { id: 6, title: "Land", image: ApartmentIcon6, properties: 25 },
   { id: 7, title: "Shop", image: ApartmentIcon7, properties: 12 },

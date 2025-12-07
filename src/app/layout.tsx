@@ -29,7 +29,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Property-La - Real Estate React NextJs Template",
+  title: "best condo to buy in Kuala Lumpur",
   description:
     "Property-La is a modern, highly customizable Next.js theme designed for real estate businesses, agencies, and property listings, offering a seamless and user-friendly experience.",
 };

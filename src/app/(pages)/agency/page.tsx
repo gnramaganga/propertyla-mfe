@@ -4,7 +4,7 @@ import CtaArea from "@/components/CTA/CtaArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Agency - Property-La Real Estate React NextJs Template",
+  title: "Find Malaysian Properties Faster Than iProperty & PropertyGuru",
 };
 
 export default function Agency() {

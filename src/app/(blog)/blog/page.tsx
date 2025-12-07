@@ -3,7 +3,7 @@ import BreadcrumbTwo from "../../../components/Breadcrumb/BreadcrumbTwo";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog - Property-La Real Estate React NextJs Template",
+  title: "Malaysia property investment tips",
 };
 
 export default function Blog() {

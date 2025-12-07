@@ -3,7 +3,7 @@ import CheckoutArea from "@/components/shop/CheckoutArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Checkout - Property-La Real Estate React NextJs Template",
+  title: "Malaysia Real Estate: New Projects, Prices & Upcoming Developments",
 };
 
 export default function Checkout() {

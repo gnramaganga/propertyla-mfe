@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "My Profile - Property-La Real Estate React NextJs Template",
+  title: "Best Areas to Buy Property in Malaysia",
 };
 
 export default function MyProfile() {

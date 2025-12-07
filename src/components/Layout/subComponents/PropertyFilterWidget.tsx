@@ -26,6 +26,7 @@ export default function PropertyFilterWidget() {
               { value: "All", label: "All Residential" },
               { value: "Apartment", label: "Apartment" },
               { value: "Condominium", label: "Condominium" },
+              { value: "Land", label: "Land" },
               { value: "Landed House", label: "Landed House" },
               { value: "Bungalow", label: "Bungalow" },
               { value: "Shop", label: "Shop" },
@@ -92,9 +93,10 @@ export default function PropertyFilterWidget() {
           <NiceSelect
             options={[
               { value: "All", label: "Show Properties" },
-              { value: "Subsale", label: "Subsale" },
-              { value: "New Launch", label: "New Launch" },
               { value: "Auction", label: "Auction" },
+              { value: "Commercial", label: "Commercial" },
+              { value: "New Launch", label: "New Launch" },
+              { value: "Subsale", label: "Subsale" },
             ]}
             defaultCurrent={0}
             onChange={() => handleSorting()}

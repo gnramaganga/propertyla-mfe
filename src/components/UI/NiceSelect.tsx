@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useCallback, useRef } from "react";
 import { useClickAway } from "react-use";
 
@@ -14,6 +14,7 @@ type IPropType = {
   cls?: string | undefined;
   onChange: (item: Option) => void;
   name: string;
+  value?: string;
 };
 
 const NiceSelect = ({
@@ -40,23 +41,21 @@ const NiceSelect = ({
 
   return (
     <div
-      className={`nice-select ${cls ? cls : ''} ${open && "open"}`}
+      className={`nice-select ${cls ? cls : ""} ${open && "open"}`}
       role="button"
       tabIndex={0}
       onClick={() => setOpen((prev) => !prev)}
       ref={ref}
     >
       <span className="current">{current?.label || placeholder}</span>
-      <ul
-        className="list"
-        role="menubar"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <ul className="list" role="menubar" onClick={(e) => e.stopPropagation()}>
         {options?.map((item, i) => (
           <li
             key={i}
             data-value={item.value}
-            className={`option ${i === 0 ? "disabled" : ''} ${item.value === current?.value && "selected focus"}`}
+            className={`option ${i === 0 ? "disabled" : ""} ${
+              item.value === current?.value && "selected focus"
+            }`}
             role="menuitem"
             onClick={() => currentHandler(item)}
           >
@@ -69,5 +68,3 @@ const NiceSelect = ({
 };
 
 export default NiceSelect;
-
-

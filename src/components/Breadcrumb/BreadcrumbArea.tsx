@@ -9,7 +9,7 @@ export default function BreadcrumbArea({ title }: { title: string }) {
         style={{ backgroundImage: `url(${breadcrumbBg.src})` }}
       ></div>
       <div className="tp-breadcrumb__text">
-        <h3 className="tp-breadcrumb__text-title">Property-La</h3>
+        {/* <h3 className="tp-breadcrumb__text-title">Property-La</h3> */}
       </div>
       <div className="container">
         <div className="row align-items-center">
@@ -18,9 +18,9 @@ export default function BreadcrumbArea({ title }: { title: string }) {
               <h3 className="tp-breadcrumb__title">{title}</h3>
               <div className="tp-breadcrumb__list">
                 <span>
-                  <Link href="/">Home</Link>
+                  <Link href="/">Property La</Link>
                 </span>{" "}
-                <span className="dvdr"></span> <span>{title}</span>
+                {/* <span className="dvdr"></span> <span>Property La</span> */}
               </div>
             </div>
           </div>

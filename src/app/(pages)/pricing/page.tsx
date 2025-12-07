@@ -6,7 +6,7 @@ import ProgressArea from "@/components/Progress/ProgressArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing - Property-La Real Estate React NextJs Template",
+  title: "Hot Properties in KL, PJ, Penang & Johor Bahru",
 };
 
 export default function Pricing() {

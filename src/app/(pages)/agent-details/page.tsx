@@ -3,7 +3,7 @@ import BreadcrumbArea from "@/components/Breadcrumb/BreadcrumbArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Agent Details - Property-La Real Estate React NextJs Template",
+  title: "Top Condos in KLCC & Mont Kiara, Malaysia",
 };
 
 export default async function AgentDetails() {

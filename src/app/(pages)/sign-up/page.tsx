@@ -3,7 +3,7 @@ import SignUpForm from "@/components/Form/auth/SignUpForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sign Up - Property-La Real Estate React NextJs Template",
+  title: "Malaysia Property Listings – Buy, Rent, or Invest",
 };
 
 export default function SignUp() {

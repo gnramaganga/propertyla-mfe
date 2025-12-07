@@ -33,14 +33,17 @@ export default function HomePropertiesByCity() {
                   <Image src={property.image} alt={property.name} />
                   <div className="tp-explore-content">
                     <h4 className="tp-explore-title">
-                      <Link className="textline" href="/search">
+                      <Link
+                        className="textline"
+                        href="/search?city='property.name'"
+                      >
                         {property.name}
                       </Link>
                     </h4>
                     <span>{property.count} Property</span>
                   </div>
                   <div className="tp-explore-btn">
-                    <Link href="/search">
+                    <Link href="/search?city='property.name'">
                       <span>
                         <NavigateArrowSvg />
                       </span>

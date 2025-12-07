@@ -1,8 +1,18 @@
+"use client";
+import { useRouter } from "next/navigation";
 import apartmentTypes from "@/data/apartmentTypeData";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function HomeApartmentTypes() {
+  const router = useRouter();
+
+  const getProperties = (title: string) => {
+    const query = new URLSearchParams({
+      propertyType: title,
+    });
+    router.push(`/search?${query.toString()}`);
+  };
   return (
     <section className="tp-apartment-area pt-100 pb-80">
       <div className="container">
@@ -28,7 +38,12 @@ export default function HomeApartmentTypes() {
                   </div>
                   <div className="tp-apartment-item-content">
                     <h5 className="tp-apartment-item-title">
-                      <Link href="#">{apartment.title}</Link>
+                      <a
+                        style={{ cursor: "pointer" }}
+                        onClick={() => getProperties(apartment.title)}
+                      >
+                        {apartment.title}
+                      </a>
                     </h5>
                     <p>{apartment.properties} Property</p>
                   </div>

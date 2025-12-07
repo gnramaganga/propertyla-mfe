@@ -3,7 +3,7 @@ import signInThumb from "../../../../public/assets/img/others/sign-in-thumb.jpg"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Forgotten Password - Property-La Real Estate React NextJs Template",
+  title: "New Launch Properties in Malaysia – Developer Direct Deals",
 };
 
 export default function Forget() {

@@ -5,7 +5,7 @@ import FaqArea from "@/components/FAQ/FaqArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ - Property-La Real Estate React NextJs Template",
+  title: "Malaysia Commercial Properties – Offices, Retail & Industrial",
 };
 
 export default function Faq() {

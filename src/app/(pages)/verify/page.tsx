@@ -3,7 +3,8 @@ import signInThumb from "../../../../public/assets/img/others/sign-in-thumb.jpg"
 import VerifyForm from "@/components/Form/auth/VerifyForm";
 
 export const metadata: Metadata = {
-  title: "Sign In - Property-La Real Estate React NextJs Template",
+  title:
+    "Latest Residential Projects – Freehold, Leasehold & Mixed Development",
 };
 
 export default function Verify() {

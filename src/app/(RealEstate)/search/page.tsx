@@ -3,7 +3,7 @@ import PropertyOneArea from "@/components/RealEstate/PropertyStyleOne/PropertyOn
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Property Style 1 - Property-La Real Estate React NextJs Template",
+  title: "Malaysia Property Market Forecast 2025 – What Buyers Should Know",
 };
 
 export default function PropertyOne() {

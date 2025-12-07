@@ -29,7 +29,7 @@ export default function HeroBannerTabContent({
     const query = new URLSearchParams({
       address: place,
       city: city,
-      type: id,
+      searchType: id,
     });
     router.push(`/search?${query.toString()}`);
   };

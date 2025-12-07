@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import FilterByProperty from "./components/FilterByProperty";
 
 export const metadata: Metadata = {
-  title: "My Properties - Property-La Real Estate React NextJs Template",
+  title: "Top Investment Properties in Kuala Lumpur",
 };
 
 export default function DashboardProperty() {

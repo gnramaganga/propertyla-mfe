@@ -3,7 +3,7 @@ import Wrapper from "@/layouts/Wrapper";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Property Details - Property-La Real Estate React NextJs Template",
+  title: "Malaysia Property Search – Verified Listings Only",
 };
 
 export default async function PropertyDetails() {

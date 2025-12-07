@@ -52726,7 +52726,7 @@ div.demo img {
 }
 
 .tp-hero-tab-box {
-  border-radius: 8px;
+  border-radius: 0px 8px 8px 8px;
 }
 
 .tp-hero-tab-search button {

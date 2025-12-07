@@ -5,7 +5,7 @@ import { propertyData } from "@/data/propertyData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Favourite - Property-La Real Estate React NextJs Template",
+  title: "Property with good rental yield Malaysia",
 };
 
 export default function DashboardFavourite() {

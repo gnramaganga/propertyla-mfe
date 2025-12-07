@@ -4,7 +4,7 @@ import StatsCardGrid from "./components/StatsCardGrid";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dashboard - Property-La Real Estate React NextJs Template",
+  title: "foreigners buying property in Malaysia rules",
 };
 
 export default function Dashboard() {

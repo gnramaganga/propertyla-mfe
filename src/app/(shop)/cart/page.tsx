@@ -3,7 +3,7 @@ import CartArea from "@/components/shop/CartArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cart - Property-La Real Estate React NextJs Template",
+  title: "Kuala Lumpur Property Market 2025: Best Areas to Invest",
 };
 
 export default function Cart() {

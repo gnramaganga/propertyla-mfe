@@ -3,7 +3,7 @@ import CompareArea from "@/components/shop/CompareArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Compare - Property-La Real Estate React NextJs Template",
+  title: "Top Suburbs to Live in KL – Family-Friendly & Expat Areas",
 };
 
 export default function Compare() {

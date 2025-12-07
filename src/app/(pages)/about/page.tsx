@@ -9,7 +9,7 @@ import ContactArea from "@/components/Contact/ContactArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About - Property-La Real Estate React NextJs Template",
+  title: "Kuala Lumpur New Launch Projects",
 };
 
 export default function About() {

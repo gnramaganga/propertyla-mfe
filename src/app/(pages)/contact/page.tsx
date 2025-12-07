@@ -5,7 +5,7 @@ import MapArea from "@/components/Contact/MapArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact - Property-La Real Estate React NextJs Template",
+  title: "KL Property Market 2025 – Data PropertyGuru Doesn’t Show",
 };
 
 export default function Contact() {

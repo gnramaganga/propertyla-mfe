@@ -8,7 +8,7 @@ import CommonHeader from "@/layouts/Headers/CommonHeader";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata: Metadata = {
-  title: "Add New Property - Property-La Real Estate React NextJs Template",
+  title: "Condos for Rent in Malaysia – Affordable & Prime Locations",
 };
 
 export default function AddProperty() {

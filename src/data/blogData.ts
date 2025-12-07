@@ -19,18 +19,17 @@ import blogThumb10 from "../../public/assets/img/blog/home-2/blog-2-thumb-4.jpg"
 import blogThumb11 from "../../public/assets/img/blog/home-2/blog-2-thumb-5.jpg";
 import blogThumb12 from "../../public/assets/img/blog/home-2/blog-2-thumb-6.jpg";
 
-
-export const blogData:IBlogDT[] = [
+export const blogData: IBlogDT[] = [
   //blog post data start
   {
     id: 1,
     image: blogThumb1,
     category: "Property",
     readTime: "8 min read",
-    title: "The art of negotiation in real estate deals",
+    title: "Malaysia property market rebounds with foreign interest and growth",
     authorImage: blogUser1,
-    authorName: "Hilary Ouse",
-    authorRole: "Founder & CEO Dulalix",
+    authorName: "asiapropertyawards.com",
+    authorRole: "2 days ago",
     delay: ".3s",
   },
   {
@@ -38,10 +37,10 @@ export const blogData:IBlogDT[] = [
     image: blogThumb2,
     category: "Property",
     readTime: "8 min read",
-    title: "Thinking about investing in off plan? Here’s our expert",
+    title: "AI-driven Malaysia Property Intelligence Centre Launched",
     authorImage: blogUser2,
-    authorName: "Hilary Ouse",
-    authorRole: "Founder & CEO Dulalix",
+    authorName: "JLL",
+    authorRole: "13 days ago",
     delay: ".5s",
   },
   {
@@ -49,15 +48,15 @@ export const blogData:IBlogDT[] = [
     image: blogThumb3,
     category: "Property",
     readTime: "8 min read",
-    title: "RTA announce massive new 1200 meter bridge linking road",
+    title: "What drove Malaysia’s property investment market resilience in Q3?",
     authorImage: blogUser3,
-    authorName: "Hilary Ouse",
-    authorRole: "Founder & CEO Dulalix",
+    authorName: "RealEstatesAsis",
+    authorRole: "27 days ago",
     delay: ".7s",
   },
-   //blog post data end
-   //home three blog data start
-   {
+  //blog post data end
+  //home three blog data start
+  {
     id: 4,
     image: blogThumb7,
     date: "7 Months ago",
@@ -81,7 +80,7 @@ export const blogData:IBlogDT[] = [
     title: "From luxurious estates with stunning",
     delay: ".7s",
   },
-    //home three blog data end
+  //home three blog data end
   //home two blog data start
   {
     id: 7,
@@ -216,6 +215,6 @@ export const blogData:IBlogDT[] = [
     description: "Amet minim mollit non deserunt est sit aliqua dolor do amet.",
     delay: ".7s",
   },
-]
+];
 
 export default blogData;

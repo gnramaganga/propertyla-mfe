@@ -3,7 +3,7 @@ import signInThumb from "../../../../public/assets/img/others/sign-in-thumb.jpg"
 import SignInForm from "@/components/Form/auth/SignInForm";
 
 export const metadata: Metadata = {
-  title: "Sign In - Property-La Real Estate React NextJs Template",
+  title: "Find the Best Residential Properties in Malaysia 2025",
 };
 
 export default function SignIn() {

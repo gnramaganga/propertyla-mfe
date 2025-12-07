@@ -28,7 +28,7 @@ export default function HeroBannerOne() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="tp-hero-content tab-top-home">
+              <div className="tp-hero-content" style={{ marginTop: "15%" }}>
                 <div
                   className="tp-hero-tab p-relative wow fadeInUp"
                   data-wow-duration="1s"
@@ -38,18 +38,6 @@ export default function HeroBannerOne() {
                     <nav>
                       <div className="nav nav-tabs" id="nav-tab" role="tablist">
                         <button
-                          className="nav-link"
-                          id="nav-buy-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#buy"
-                          type="button"
-                          role="tab"
-                          aria-controls="nav-buy"
-                          aria-selected="true"
-                        >
-                          Buy
-                        </button>
-                        <button
                           className="nav-link active"
                           id="nav-rent-tab"
                           data-bs-toggle="tab"
@@ -58,10 +46,24 @@ export default function HeroBannerOne() {
                           role="tab"
                           aria-controls="nav-rent"
                           aria-selected="false"
+                          style={{ borderRadius: "8px 0px 0px 0px" }}
                         >
-                          Rent
+                          For Rent
                         </button>
                         <button
+                          className="nav-link"
+                          id="nav-buy-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#buy"
+                          type="button"
+                          role="tab"
+                          aria-controls="nav-buy"
+                          aria-selected="true"
+                          style={{ borderRadius: "0px 8px 0px 0px" }}
+                        >
+                          For Sale
+                        </button>
+                        {/* <button
                           className="nav-link"
                           id="nav-new-tab"
                           data-bs-toggle="tab"
@@ -96,16 +98,10 @@ export default function HeroBannerOne() {
                           aria-selected="false"
                         >
                           Plots/Land
-                        </button>
+                        </button> */}
                       </div>
                     </nav>
                     <div className="tab-content" id="nav-tabContent">
-                      <HeroBannerTabContent
-                        id="buy"
-                        isActive={activeTab === "buy"}
-                        onSortChange={handleSorting}
-                        toggleFilter={toggleFilter}
-                      />
                       <HeroBannerTabContent
                         id="rent"
                         isActive={activeTab === "rent"}
@@ -113,6 +109,12 @@ export default function HeroBannerOne() {
                         toggleFilter={toggleFilter}
                       />
                       <HeroBannerTabContent
+                        id="buy"
+                        isActive={activeTab === "buy"}
+                        onSortChange={handleSorting}
+                        toggleFilter={toggleFilter}
+                      />
+                      {/* <HeroBannerTabContent
                         id="new-launch"
                         isActive={activeTab === "new-launch"}
                         onSortChange={handleSorting}
@@ -129,11 +131,12 @@ export default function HeroBannerOne() {
                         isActive={activeTab === "land"}
                         onSortChange={handleSorting}
                         toggleFilter={toggleFilter}
-                      />
+                      /> */}
                     </div>
                   </div>
                   {/* -- form area start -- */}
                   <section
+                    style={{ borderRadius: "8px" }}
                     className={`tp-from-filter ${
                       isFilterVisible ? "show" : "hidden"
                     }`}

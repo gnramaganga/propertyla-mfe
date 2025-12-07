@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Error - Property-La Real Estate React NextJs Template",
+  title: "Houses for Sale in Kuala Lumpur",
 };
 
 export default function Error() {
