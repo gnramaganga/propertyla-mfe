@@ -117,6 +117,9 @@
 .tp-property-filter-wrap {
   border-radius: 8px;
 }
+.f18 {
+  font-size: 18px;
+}
 @media only screen and (max-width: 767px) {
   .marTop20 {
     margin-top: 20px;
@@ -130,10 +133,21 @@
   .mrd0 {
     margin-right: -15px !important;
   }
+  .bs {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px),
   only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .tp-property-ptb {
+    padding-top: 15px;
+    padding-bottom: 80px;
+  }
 }

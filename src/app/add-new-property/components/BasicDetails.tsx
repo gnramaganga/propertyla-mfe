@@ -21,7 +21,7 @@ export default function BasicDetails() {
       <h5 className="tp-dashboard-new-title">
         Start posting your property, it's Free
       </h5>
-      <h6 className="tp-dashboard-new-title">Basic details</h6>
+      <h6 className="tp-dashboard-new-title f18">Basic details</h6>
       <div className="tp-dashboard-new-property-box">
         <div className="row">
           <div className="col-lg-4">

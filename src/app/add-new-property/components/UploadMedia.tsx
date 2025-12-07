@@ -9,7 +9,7 @@ const uploadedImages = [image1, image2, image3, image4];
 export default function UploadMedia() {
   return (
     <div className="tp-dashboard-new-property mb-15">
-      <h5 className="tp-dashboard-new-title">Upload Media</h5>
+      <h5 className="tp-dashboard-new-title f18">Upload Media</h5>
 
       <div className="tp-dashboard-new-um">
         {/* Upload Area */}

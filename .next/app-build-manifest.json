@@ -11,66 +11,38 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/page": [
+    "/(RealEstate)/search/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/chunks/app/(RealEstate)/search/layout.js"
     ],
-    "/(pages)/sign-in/layout": [
+    "/(RealEstate)/search/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/sign-in/layout.js"
-    ],
-    "/(pages)/sign-in/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/sign-in/page.js"
-    ],
-    "/(pages)/sign-up/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/sign-up/layout.js"
-    ],
-    "/(pages)/sign-up/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/sign-up/page.js"
+      "static/css/app/(RealEstate)/search/page.css",
+      "static/chunks/app/(RealEstate)/search/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
     ],
-    "/(shop)/wishlist/layout": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(shop)/wishlist/layout.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
-    "/(shop)/wishlist/page": [
+    "/add-new-property/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(shop)/wishlist/page.js"
+      "static/css/app/add-new-property/page.css",
+      "static/chunks/app/add-new-property/page.js"
     ],
-    "/(pages)/about/layout": [
+    "/(dashboard)/dashboard/my-profile/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/about/layout.js"
-    ],
-    "/(pages)/about/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/about/page.js"
-    ],
-    "/(pages)/faq/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/faq/layout.js"
-    ],
-    "/(pages)/faq/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/faq/page.js"
+      "static/chunks/app/(dashboard)/dashboard/my-profile/page.js"
     ]
   }
 }

@@ -81,7 +81,7 @@ export default function AmenitiesArea() {
 
   return (
     <div className="tp-dashboard-new-property mb-15">
-      <h5 className="tp-dashboard-new-title">Amenities</h5>
+      <h5 className="tp-dashboard-new-title f18">Amenities</h5>
       <div className="tp-property-details-checking tp-dashboard-new-cheking">
         <div className="row">
           {amenityGroups.map((group, index) => (

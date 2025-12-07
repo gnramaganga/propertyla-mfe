@@ -11,7 +11,7 @@ export default function LocationDetails() {
 
   return (
     <div className="tp-dashboard-new-property mb-15">
-      <h5 className="tp-dashboard-new-title">Location Details</h5>
+      <h5 className="tp-dashboard-new-title f18">Location Details</h5>
       <div className="tp-dashboard-new-property-box">
         <div className="row">
           <div className="col-lg-8">

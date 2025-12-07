@@ -71,7 +71,7 @@ export default function VerticalProgress({ currentStep }: ProgressProps) {
         }
 
         .circleOuterActive {
-          border-color: #ef4444;
+          border-color: rgba(233, 69, 91, 0.7803921569);
         }
 
         .innerDot {
@@ -82,7 +82,7 @@ export default function VerticalProgress({ currentStep }: ProgressProps) {
         }
 
         .innerDotActive {
-          background: #ef4444;
+          background: rgba(233, 69, 91, 0.7803921569);
         }
 
         .labelBlock {

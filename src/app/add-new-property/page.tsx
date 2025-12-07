@@ -22,7 +22,7 @@ export default function AddProperty() {
         >
           <div className="container">
             <div className="row">
-              <div className="col-lg-3">
+              <div className="col-lg-3 bs">
                 <VerticalProgress currentStep={3} />
               </div>
               <div className="col-lg-9">
