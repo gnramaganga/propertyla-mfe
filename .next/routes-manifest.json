@@ -1,0 +1,256 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/agency-details/[id]",
+      "regex": "^/agency\\-details/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/agency\\-details/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/agent-details/[id]",
+      "regex": "^/agent\\-details/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/agent\\-details/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/blog-details/[id]",
+      "regex": "^/blog\\-details/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/blog\\-details/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/property-details/[id]",
+      "regex": "^/property\\-details/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/property\\-details/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/add-new-property",
+      "regex": "^/add\\-new\\-property(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/add\\-new\\-property(?:/)?$"
+    },
+    {
+      "page": "/agency",
+      "regex": "^/agency(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/agency(?:/)?$"
+    },
+    {
+      "page": "/agency-details",
+      "regex": "^/agency\\-details(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/agency\\-details(?:/)?$"
+    },
+    {
+      "page": "/agent",
+      "regex": "^/agent(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/agent(?:/)?$"
+    },
+    {
+      "page": "/agent-details",
+      "regex": "^/agent\\-details(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/agent\\-details(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/blog-details",
+      "regex": "^/blog\\-details(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog\\-details(?:/)?$"
+    },
+    {
+      "page": "/cart",
+      "regex": "^/cart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart(?:/)?$"
+    },
+    {
+      "page": "/checkout",
+      "regex": "^/checkout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/checkout(?:/)?$"
+    },
+    {
+      "page": "/compare",
+      "regex": "^/compare(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/compare(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/dashboard/favourite",
+      "regex": "^/dashboard/favourite(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/favourite(?:/)?$"
+    },
+    {
+      "page": "/dashboard/my-profile",
+      "regex": "^/dashboard/my\\-profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/my\\-profile(?:/)?$"
+    },
+    {
+      "page": "/dashboard/property",
+      "regex": "^/dashboard/property(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/property(?:/)?$"
+    },
+    {
+      "page": "/dashboard/review",
+      "regex": "^/dashboard/review(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/review(?:/)?$"
+    },
+    {
+      "page": "/error",
+      "regex": "^/error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/error(?:/)?$"
+    },
+    {
+      "page": "/faq",
+      "regex": "^/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/faq(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/forget",
+      "regex": "^/forget(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/forget(?:/)?$"
+    },
+    {
+      "page": "/home-one",
+      "regex": "^/home\\-one(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home\\-one(?:/)?$"
+    },
+    {
+      "page": "/pricing",
+      "regex": "^/pricing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pricing(?:/)?$"
+    },
+    {
+      "page": "/property-details",
+      "regex": "^/property\\-details(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-details(?:/)?$"
+    },
+    {
+      "page": "/search",
+      "regex": "^/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/search(?:/)?$"
+    },
+    {
+      "page": "/sign-in",
+      "regex": "^/sign\\-in(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sign\\-in(?:/)?$"
+    },
+    {
+      "page": "/sign-up",
+      "regex": "^/sign\\-up(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sign\\-up(?:/)?$"
+    },
+    {
+      "page": "/verify",
+      "regex": "^/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/verify(?:/)?$"
+    },
+    {
+      "page": "/wishlist",
+      "regex": "^/wishlist(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/wishlist(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}
