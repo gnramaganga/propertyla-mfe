@@ -1,4 +1,5 @@
 "use client";
+import React, { useState } from "react";
 import {
   ActiveWishListSvg,
   BathroomsSvg,
@@ -21,6 +22,8 @@ import { IdProps } from "@/types/custom-interface";
 import { RootState } from "@/redux/store";
 import Image from "next/image";
 import ApartmentIcon1 from "../../../../public/assets/img/rent/property/property-details-thumb-1.png";
+import propertyBg from "../../../../public/assets/img/rent/property-bg.jpg";
+import Breadcrumb from "../../Breadcrumb/Breadcrumb";
 
 export default function PropertyDetailsOneArea({ id }: IdProps) {
   const dispatch = useDispatch();
@@ -51,12 +54,57 @@ export default function PropertyDetailsOneArea({ id }: IdProps) {
     "https://picsum.photos/id/1037/1000/600",
   ];
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev + 1) % dummyImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev === 0 ? dummyImages.length - 1 : prev - 1));
+  };
+
   return (
     <>
-      {/* property details slider  */}
-      <section className="tp-property-details-area pt-80 pb-130">
+      <section
+        className="tp-property-ptb pt-35 pb-50"
+        style={{ backgroundImage: `url(${propertyBg.src})` }}
+      >
+        {/* <section className="tp-property-details-area pt-80 pb-130"> */}
         <div className="container">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Search", href: "/search" },
+              { label: "Property Details" },
+            ]}
+          />
           <div className="row">
+            <div className="col-lg-6">
+              <div className="image-wrapper">
+                <Image
+                  src={ApartmentIcon1}
+                  style={{
+                    height: "auto",
+                    marginTop: "13px",
+                    borderRadius: "5px",
+                    cursor: "pointer",
+                  }}
+                  alt={"image"}
+                  onClick={() => openModal()}
+                />
+                <span className="count-badge">{5}</span>
+              </div>
+            </div>
             <div className="col-lg-6">
               <div className="tp-property-details-heading mb-70">
                 <h4 className="tp-property-details-title">{property?.title}</h4>
@@ -77,72 +125,130 @@ export default function PropertyDetailsOneArea({ id }: IdProps) {
                 ${property?.price}
               </h4>
             </div>
-            <div className="col-lg-6">
-              <div className="thumbnail-container">
-                <Image
-                  src={ApartmentIcon1}
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    marginTop: "13px",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                  }}
-                  alt={"image"}
-                  //onClick={() => openModal()}
-                />
-              </div>
-            </div>
-            {/* <div className="col-lg-6">
-              <div className="tp-property-details-right-side text-lg-end mb-70">
-                <div className="tp-property-details-icon-box">
-                  <button>
-                    <span>
-                      <BookmarkSvg />
-                    </span>
-                  </button>
-                  <button
-                    onClick={() => property && handleAddToCompire(property)}
-                  >
-                    <span>
-                      <CompireSvgTwo />
-                    </span>
-                  </button>
-                  <button
-                    onClick={() =>
-                      property && dispatch(toggle_wishlist(property))
-                    }
-                  >
-                    <span>
-                      {isWishlisted ? (
-                        <ActiveWishListSvg width="26" height="26" />
-                      ) : (
-                        <WishListSvg width="20" height="20" />
-                      )}{" "}
-                    </span>
-                  </button>
-                  <button onClick={() => property && handleAddToCart(property)}>
-                    <span>
-                      <CartSvg width="24" height="24" />
-                    </span>
-                  </button>
-                </div>
-                <h4 className="tp-property-details-icon-price">
-                  ${property?.price}
-                </h4>
-              </div>
-            </div> */}
           </div>
         </div>
-        <div className="container-fluid gx-0">
-          {/* <PropertyDetailsSlider /> */}
-        </div>
       </section>
-      {/* property details slider */}
-
-      {/* property-details area */}
       <DetailsReusableArea />
-      {/* property-details area end */}
+      {isOpen && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            {/* Close Button */}
+            <button className="close-btn" onClick={closeModal}>
+              ×
+            </button>
+
+            {/* Slider Buttons */}
+            <button className="nav-btn left" onClick={prevImage}>
+              ❮
+            </button>
+
+            <img
+              src={dummyImages[currentIndex]}
+              alt="full"
+              className="modal-image"
+            />
+
+            <button className="nav-btn right" onClick={nextImage}>
+              ❯
+            </button>
+          </div>
+        </div>
+      )}
+      <style jsx>{`
+        .thumbnail-container {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+
+        .thumbnail {
+          width: 120px;
+          height: 80px;
+          object-fit: cover;
+          cursor: pointer;
+          border-radius: 8px;
+        }
+
+        .modal-overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.85);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+        }
+
+        .modal-content {
+          position: relative;
+          width: 90%;
+          height: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .modal-image {
+          max-width: 95%;
+          max-height: 95%;
+          border-radius: 10px;
+          object-fit: contain;
+        }
+
+        .close-btn {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          font-size: 40px;
+          background: transparent;
+          border: none;
+          color: white;
+          cursor: pointer;
+        }
+
+        .nav-btn {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(255, 255, 255, 0.2);
+          border: none;
+          font-size: 40px;
+          color: white;
+          cursor: pointer;
+          padding: 5px 15px;
+          border-radius: 6px;
+        }
+
+        .nav-btn.left {
+          left: 20px;
+        }
+
+        .nav-btn.right {
+          right: 20px;
+        }
+        .image-wrapper {
+          position: relative;
+           {
+            /* display: inline-block; */
+          }
+        }
+
+        .main-image {
+          border-radius: 8px;
+        }
+
+        .count-badge {
+          position: absolute;
+          bottom: 8px;
+          right: 8px;
+          background: rgba(0, 0, 0, 0.7);
+          color: white;
+          padding: 4px 10px;
+          border-radius: 12px;
+          font-size: 12px;
+          font-weight: 600;
+        }
+      `}</style>
     </>
   );
 }

@@ -43,31 +43,6 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
     (wishlistItem) => wishlistItem.id === item.id
   );
 
-  const dummyImages = [
-    "https://picsum.photos/id/1018/1000/600",
-    "https://picsum.photos/id/1024/1000/600",
-    "https://picsum.photos/id/1037/1000/600",
-  ];
-
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const openModal = () => {
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-  };
-
-  const nextImage = () => {
-    setCurrentIndex((prev) => (prev + 1) % dummyImages.length);
-  };
-
-  const prevImage = () => {
-    setCurrentIndex((prev) => (prev === 0 ? dummyImages.length - 1 : prev - 1));
-  };
-
   return (
     <div
       style={{ border: "1px solid #DBE1EF", borderRadius: "8px" }}
@@ -78,7 +53,7 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
       data-wow-delay={item.wowDelay ? item.wowDelay : undefined}
     >
       <div className="col-xl-6 tp-rent-thumb p-relative">
-        <div className="thumbnail-container">
+        <Link className="textline" href={`/${item.linkUrl}/${item.id}`}>
           <Image
             src={item.image}
             style={{
@@ -89,9 +64,8 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
               cursor: "pointer",
             }}
             alt={item.title}
-            onClick={() => openModal()}
           />
-        </div>
+        </Link>
         <div className="tp-rent-user-wrap d-flex align-items-center justify-content-between">
           <div className="tp-rent-user d-flex align-items-center">
             <div className="tp-rent-user-thumb">
@@ -181,104 +155,6 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
           </div>
         </div>
       </div>
-      {isOpen && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            {/* Close Button */}
-            <button className="close-btn" onClick={closeModal}>
-              ×
-            </button>
-
-            {/* Slider Buttons */}
-            <button className="nav-btn left" onClick={prevImage}>
-              ❮
-            </button>
-
-            <img
-              src={dummyImages[currentIndex]}
-              alt="full"
-              className="modal-image"
-            />
-
-            <button className="nav-btn right" onClick={nextImage}>
-              ❯
-            </button>
-          </div>
-        </div>
-      )}
-      <style jsx>{`
-        .thumbnail-container {
-          display: flex;
-          gap: 10px;
-          flex-wrap: wrap;
-        }
-
-        .thumbnail {
-          width: 120px;
-          height: 80px;
-          object-fit: cover;
-          cursor: pointer;
-          border-radius: 8px;
-        }
-
-        .modal-overlay {
-          position: fixed;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.85);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 9999;
-        }
-
-        .modal-content {
-          position: relative;
-          width: 90%;
-          height: 90%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .modal-image {
-          max-width: 95%;
-          max-height: 95%;
-          border-radius: 10px;
-          object-fit: contain;
-        }
-
-        .close-btn {
-          position: absolute;
-          top: 20px;
-          right: 20px;
-          font-size: 40px;
-          background: transparent;
-          border: none;
-          color: white;
-          cursor: pointer;
-        }
-
-        .nav-btn {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          background: rgba(255, 255, 255, 0.2);
-          border: none;
-          font-size: 40px;
-          color: white;
-          cursor: pointer;
-          padding: 5px 15px;
-          border-radius: 6px;
-        }
-
-        .nav-btn.left {
-          left: 20px;
-        }
-
-        .nav-btn.right {
-          right: 20px;
-        }
-      `}</style>
     </div>
   );
 }

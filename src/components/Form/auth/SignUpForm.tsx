@@ -187,6 +187,7 @@ export default function SignUpForm() {
               <input
                 type="text"
                 placeholder="Enter phone number"
+                value="+60"
                 {...register("phone", {
                   required: "Phone number is required",
                   pattern: {

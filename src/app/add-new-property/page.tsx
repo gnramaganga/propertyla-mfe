@@ -6,6 +6,7 @@ import BackToTop from "@/components/Common/BackToTop";
 import FooterStyleTwo from "@/layouts/Footers/FooterStyleTwo";
 import CommonHeader from "@/layouts/Headers/CommonHeader";
 import Wrapper from "@/layouts/Wrapper";
+import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Condos for Rent in Malaysia – Affordable & Prime Locations",
@@ -21,6 +22,7 @@ export default function AddProperty() {
           style={{ backgroundImage: `url(${propertyBg.src})` }}
         >
           <div className="container">
+            <Breadcrumb items={[{ label: "Home", href: "/" }]} />
             <div className="row">
               <div className="col-lg-3 bs">
                 <VerticalProgress currentStep={3} />
