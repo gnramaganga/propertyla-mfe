@@ -24,29 +24,6 @@ export default function DetailsReusableArea({ spacingClass }: IProps) {
           <div className="row">
             <div className="col-lg-8">
               <div className="tp-property-details-left">
-                <div className="tp-property-details-box box-1 mb-30">
-                  <h3 className="tp-property-details-box-title">
-                    Property-La description
-                  </h3>
-                  <div className="tp-property-details-box-desc">
-                    <p>
-                      Years seed fruit you. Divided morning sea day Set earth.
-                      Grass without cattle. Spirit <br />
-                      heaven. Also i grass give fowl wherein cattle spirit
-                      whales rule cattle. Earth fowl giv <br />
-                      -en own you’re, fruit so. Shall was. Called firmament dry
-                      fruitful, set place. <br />
-                      Earth given female man fruit, under thing may to greater
-                      moveth land sea, great be <br />
-                      shall living greater and signs place night after whose us
-                      one, you’ll second our <br />
-                      set had day in greater divided over female first face,
-                      fill form you make <br />
-                      greater upon midst image above image.
-                    </p>
-                  </div>
-                </div>
-
                 <div className="tp-property-details-box box-2 mb-30">
                   <h3 className="tp-property-details-box-title">Overview</h3>
                   <PropertyDetailsBox />

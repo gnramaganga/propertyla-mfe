@@ -6,11 +6,11 @@ import SidebarPropertyItem from "./subComponents/SidebarPropertyItem";
 import DiscountOfferCard from "./subComponents/DiscountOfferCard";
 import { propertyStates } from "@/data/dropdownData";
 import NiceSelect from "../UI/NiceSelect";
-import PlaceSearch from "../../components/HeroBanner/subComponents/PlaceSearch";
+import PlaceSearch from "../HeroBanner/subComponents/PlaceSearch";
 import { useSearchParams } from "next/navigation";
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
 
-export default function PropertyLayout({ children }: { children: ReactNode }) {
+export default function PropertyListing({ children }: { children: ReactNode }) {
   const params = useSearchParams();
   console.log("params", params);
   const address = params.get("address") || "";
@@ -53,11 +53,14 @@ export default function PropertyLayout({ children }: { children: ReactNode }) {
             <div className="col-lg-12">
               <div className="tp-property-heading mb-30">
                 <div className="tp-property-list">
-                  <span style={{ color: "#000" }}>
-                    <span style={{ color: "#E9455BC7" }}>5</span> results |
-                    Property for{" "}
+                  <span style={{ color: "#000", fontSize: "17px" }}>
+                    <span style={{ color: "#E9455BC7", fontSize: "18px" }}>
+                      5
+                    </span>{" "}
+                    results | Property for{" "}
                     <span style={{ color: "#E9455BC7" }}>{type}</span> in{" "}
-                    {address?.substring(0, 100)}..
+                    {/* {address?.substring(0, 100)}.. */}
+                    {address}
                   </span>
                 </div>
               </div>

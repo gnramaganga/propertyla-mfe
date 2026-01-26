@@ -37,10 +37,10 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
   };
   //handle wishlist
   const wishlist = useSelector(
-    (state: RootState) => state.wishlist.wishlistProducts
+    (state: RootState) => state.wishlist.wishlistProducts,
   );
   const isWishlisted = wishlist?.some(
-    (wishlistItem) => wishlistItem.id === item.id
+    (wishlistItem) => wishlistItem.id === item.id,
   );
 
   return (
@@ -53,7 +53,7 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
       data-wow-delay={item.wowDelay ? item.wowDelay : undefined}
     >
       <div className="col-xl-6 tp-rent-thumb p-relative">
-        <Link className="textline" href={`/${item.linkUrl}/${item.id}`}>
+        <Link className="textline" href={`/property-details/${item.id}`}>
           <Image
             src={item.image}
             style={{
@@ -110,7 +110,7 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
       </div>
       <div className="col-xl-6 tp-rent-content">
         <h4 className="tp-rent-title">
-          <Link className="textline" href={`/${item.linkUrl}/${item.id}`}>
+          <Link className="textline" href={`/property-details/${item.id}`}>
             {item.title}
           </Link>
         </h4>
@@ -146,7 +146,7 @@ export default function PropertySingleCard({ item }: IFeatureListProps) {
         </div>
         <div className="tp-rent-btn-box d-flex justify-content-between align-items-center">
           <div className="tp-rent-btn">
-            <Link className="tp-btn" href={`/${item.linkUrl}/${item.id}`}>
+            <Link className="tp-btn" href={`/property-details/${item.id}`}>
               View Details
             </Link>
           </div>

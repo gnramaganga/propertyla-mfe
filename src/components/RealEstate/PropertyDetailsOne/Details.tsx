@@ -21,7 +21,7 @@ import { propertyData } from "@/data/propertyData";
 import { IdProps } from "@/types/custom-interface";
 import { RootState } from "@/redux/store";
 import Image from "next/image";
-import ApartmentIcon1 from "../../../../public/assets/img/rent/property/property-details-thumb-1.png";
+import mainImage from "../../../../public/assets/img/explore/explore-thumb-1.jpg";
 import propertyBg from "../../../../public/assets/img/rent/property-bg.jpg";
 import Breadcrumb from "../../Breadcrumb/Breadcrumb";
 
@@ -44,7 +44,7 @@ export default function PropertyDetailsOneArea({ id }: IdProps) {
   };
   //handle wishlist
   const wishlist = useSelector(
-    (state: RootState) => state.wishlist.wishlistProducts
+    (state: RootState) => state.wishlist.wishlistProducts,
   );
   const isWishlisted = wishlist?.some((wishlistItem) => wishlistItem.id === id);
 
@@ -92,7 +92,7 @@ export default function PropertyDetailsOneArea({ id }: IdProps) {
             <div className="col-lg-6">
               <div className="image-wrapper">
                 <Image
-                  src={ApartmentIcon1}
+                  src={mainImage}
                   style={{
                     height: "auto",
                     marginTop: "13px",
@@ -106,9 +106,12 @@ export default function PropertyDetailsOneArea({ id }: IdProps) {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="tp-property-details-heading mb-70">
-                <h4 className="tp-property-details-title">{property?.title}</h4>
+              <div className="tp-property-details-heading">
+                <h5 className="tp-property-details-title">{property?.title}</h5>
                 <span>{property?.address}</span>
+                <h5 className="tp-property-details-icon-price">
+                  RM {property?.price}
+                </h5>
                 <div className="tp-property-details-info">
                   <span>
                     <BedroomsSvg /> {property?.bedrooms} Bed
@@ -120,10 +123,18 @@ export default function PropertyDetailsOneArea({ id }: IdProps) {
                     <LivingSvg /> {property?.livingArea}
                   </span>
                 </div>
+                <div>
+                  <h4>About the property</h4>
+                  <div>
+                    Years seed fruit you. Divided morning sea day Set earth.
+                    Grass without cattle. Spirit heaven. Also i grass give fowl
+                    wherein cattle spirit whales rule cattle. Earth fowl giv
+                    Years seed fruit you. Divided morning sea day Set earth.
+                    Grass without cattle. Spirit heaven. Also i grass give fowl
+                    wherein cattle spirit whales rule cattle. Earth fowl giv
+                  </div>
+                </div>
               </div>
-              <h4 className="tp-property-details-icon-price">
-                ${property?.price}
-              </h4>
             </div>
           </div>
         </div>

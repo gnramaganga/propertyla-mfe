@@ -1,4 +1,4 @@
-import PropertyLayout from "@/components/Layout/PropertyLayout";
+import PropertyListing from "@/components/Layout/PropertyListing";
 import PropertyOneArea from "@/components/RealEstate/PropertyStyleOne/PropertyOneArea";
 import { Metadata } from "next";
 
@@ -10,9 +10,9 @@ export default function PropertyOne() {
   return (
     <>
       {/* property area start */}
-      <PropertyLayout>
+      <PropertyListing>
         <PropertyOneArea />
-      </PropertyLayout>
+      </PropertyListing>
       {/* property area end */}
     </>
   );
