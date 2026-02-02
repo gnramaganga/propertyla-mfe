@@ -58,7 +58,7 @@ const BannerFromFilter = () => {
 
   return (
     <>
-      <div className="tp-from-wrapper">
+      <div className="tp-from-wrapper" style={{ borderRadius: "8px" }}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="tp-from-select-box d-flex flex-wrap flex-lg-nowrap">
             <div className="tp-hero-tab-select tp-select">

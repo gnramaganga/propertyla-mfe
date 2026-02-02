@@ -33,6 +33,12 @@
       "static/css/app/(RealEstate)/search/page.css",
       "static/chunks/app/(RealEstate)/search/page.js"
     ],
+    "/add-new-property/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/add-new-property/page.css",
+      "static/chunks/app/add-new-property/page.js"
+    ],
     "/(RealEstate)/property-details/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

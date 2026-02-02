@@ -42,7 +42,7 @@ export default function PropertyListing({ children }: { children: ReactNode }) {
   return (
     <>
       <section
-        className="tp-property-ptb pt-35 pb-120"
+        className="tp-property-ptb pt-10 pb-120"
         style={{ backgroundImage: `url(${propertyBg.src})` }}
       >
         <div className="container">
@@ -53,11 +53,11 @@ export default function PropertyListing({ children }: { children: ReactNode }) {
             <div className="col-lg-12">
               <div className="tp-property-heading mb-30">
                 <div className="tp-property-list">
-                  <span style={{ color: "#000", fontSize: "17px" }}>
-                    <span style={{ color: "#E9455BC7", fontSize: "18px" }}>
-                      5
+                  <span style={{ color: "#000", fontSize: "15px" }}>
+                    <span style={{ color: "#E9455BC7", fontSize: "17px" }}>
+                      95
                     </span>{" "}
-                    results | Property for{" "}
+                    results - Property for sale or rent
                     <span style={{ color: "#E9455BC7" }}>{type}</span> in{" "}
                     {/* {address?.substring(0, 100)}.. */}
                     {address}
@@ -97,15 +97,15 @@ export default function PropertyListing({ children }: { children: ReactNode }) {
               </div>
             </div>
           </div>
-          <div className="row mrd0">
+          <div className="row">
+            <div className="col-lg-8">
+              {/* Main content section */}
+              {children}
+            </div>
             <div className="col-lg-4">
               <PropertyFilterWidget />
               <SidebarPropertyItem customClass="tp-team-details-item" />
               <DiscountOfferCard />
-            </div>
-            <div className="col-lg-8">
-              {/* Main content section */}
-              {children}
             </div>
           </div>
         </div>

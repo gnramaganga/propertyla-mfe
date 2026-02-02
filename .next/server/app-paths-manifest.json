@@ -1,6 +1,6 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
+  "/add-new-property/page": "app/add-new-property/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/(RealEstate)/search/page": "app/(RealEstate)/search/page.js",
   "/(RealEstate)/property-details/[id]/page": "app/(RealEstate)/property-details/[id]/page.js"

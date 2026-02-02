@@ -18,7 +18,7 @@ export default function AddProperty() {
       <Wrapper>
         <CommonHeader />
         <section
-          className="tp-property-ptb pt-35 pb-120"
+          className="tp-property-ptb pt-10 pb-120"
           style={{ backgroundImage: `url(${propertyBg.src})` }}
         >
           <div className="container">

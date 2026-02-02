@@ -52708,7 +52708,6 @@ div.demo img {
 .gsrch {
   background: #fff;
   margin-right: 0px;
-  margin-left: 0px;
   padding-top: 20px;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -52824,6 +52823,16 @@ div.demo img {
   font-size: 18px;
 }
 
+.tp-team-contact-select .nice-select {
+  border-radius: 0;
+  height: 35px;
+  line-height: 35px;
+}
+
+.tp-main-menu ul li .sub-menu {
+  border-radius: 8px;
+}
+
 @media only screen and (max-width: 767px) {
   .marTop20 {
     margin-top: 20px;
@@ -52843,7 +52852,10 @@ div.demo img {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .tp-property-ptb {
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 80px;
+  }
+  .gsrch {
+    margin-left: 0px;
   }
 }
